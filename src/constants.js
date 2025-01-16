@@ -1,2 +1,2 @@
-export const githubOwner = 'code4sac'
+export const githubOwner = 'opensacorg'
 export const githubProject = 'opensac.org'
