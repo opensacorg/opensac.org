@@ -23,7 +23,7 @@ export default function SidebarSection({children, sectionType}) {
           <Link href="/code-of-conduct" className={`anchor`}>Code of Conduct</Link>
           <Link
             className={`anchor`}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfvzzvz8lCwUD8TEDiPt7ZmN34AB0dhG61590KM_scxYoZf5w/viewform"
+            href="https://forms.gle/JA3jAV9wE1645i9LA"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to new member form.">New Member Form</Link>
