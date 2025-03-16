@@ -1,6 +1,6 @@
 'use client'
 import { Slider } from '@/components/ui'
-import Button from 'src/components/ui/buttons'
+import Button from '../../components/ui/buttons'
 
 /**
  * Home projects section.

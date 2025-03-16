@@ -1,4 +1,4 @@
-import Button from 'src/components/ui/buttons'
+import Button from '../../../components/ui/buttons'
 
 export default function SingleProjectsContribute({
   contributeAs,

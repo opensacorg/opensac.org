@@ -66,7 +66,7 @@ export default function AppNavbar() {
         <div className={'navbar-toolbar-main'}>
           <div className={'navbar-toolbar-content container-xxl'}>
             <div className={'navbar-left-container'}>
-              <Link className={'navbar-left-section'} href="/public">
+              <Link className={'navbar-left-section'} href="/">
                 <img
                   src="/img/logo_opensac_black_transparent_2.png"
                   alt="Open Sacramento logo"
@@ -81,7 +81,7 @@ export default function AppNavbar() {
                 <li
                   className={`navbar-link ${websiteURL === '/' ? 'navbar-link-selected one' : ''}`}
                 >
-                  <Link href="/public">Home</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li
                   className={`navbar-link ${websiteURL === '/about' ? 'navbar-link-selected two' : ''}`}

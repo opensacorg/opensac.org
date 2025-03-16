@@ -1,5 +1,4 @@
 import { githubOwner } from '@/constants'
-import '@/styles/pages/projects.scss'
 import SingleProject from './singleProject'
 
 // See https://nextjs.org/docs/app/api-reference/functions/generate-static-params
