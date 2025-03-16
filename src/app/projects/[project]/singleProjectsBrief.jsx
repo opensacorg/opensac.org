@@ -2,7 +2,7 @@ export default function SingleProjectsBrief({ sectionType, data }) {
   return (
     <section id="project-brief" className={`project-brief-container`}>
       <div
-        className={`project-main-heading-container projects-main-heading-underline`}
+        className={`project-main-heading-container heading-underline underline-alt`}
       >
         <h2 className={`project-heading`}>Project Brief</h2>
       </div>

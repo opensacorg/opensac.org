@@ -1,4 +1,3 @@
-import '@/styles/pages/not-found.scss'
 import Link from 'next/link'
 
 /**

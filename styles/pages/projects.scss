@@ -36,14 +36,6 @@ Projects page layout.
   position: relative;
 }
 
-.projects-section-heading-underline::after {
-  content: '';
-  position: absolute;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid variables.$neutral-900;
-}
-
 .projects-heading-section-sub {
   margin: 10px 0;
   max-width: 450px;
@@ -51,15 +43,6 @@ Projects page layout.
 
   @media (max-width: variables.$screen-sm) {
     @include mixins.h3-semi-bold;
-  }
-}
-
-.projects-section-paragraph {
-  @include mixins.p3-regular;
-  margin: 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.p2-regular;
   }
 }
 
@@ -179,7 +162,7 @@ Projects page layout.
     }
 
     input {
-      padding: 14px 16px;
+      padding: 10px 16px;
     }
 
     input::placeholder {
@@ -592,6 +575,7 @@ details p {
 .project-heading {
   @include mixins.h1-small-semi-bold;
   color: variables.$secondary-50;
+  margin-bottom: 8px;
 }
 
 .project-main-heading-container {

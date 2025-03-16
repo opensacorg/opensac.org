@@ -56,20 +56,6 @@ conduct page layout
   }
 }
 
-.conduct-heading-underline::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid variables.$neutral-900;
-}
-
-.underline-alt::after {
-  border-bottom: 4px solid variables.$neutral-50;
-}
-
 .conduct-sub-h1-heading {
   @include mixins.h1-small-semi-bold;
   margin: 12px 0;
@@ -87,15 +73,6 @@ conduct page layout
 
   @media (max-width: variables.$screen-sm) {
     @include mixins.p2-bold;
-  }
-}
-
-.conduct-section-paragraph {
-  @include mixins.p3-regular;
-  margin: 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.p2-regular;
   }
 }
 

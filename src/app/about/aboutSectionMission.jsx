@@ -7,7 +7,7 @@ export default function AboutSectionMission({ sectionType }) {
     <section className={`general-section-${sectionType} about-section-mission`}>
       <div className={`mission-container`}>
         <div
-          className={`about-${sectionType}-heading-container about-heading-underline about-underline-alt`}
+          className={`about-${sectionType}-heading-container heading-underline underline-alt`}
         >
           <h1 className={`general-heading-section general-heading-section-alt`}>
             OUR MISSION
@@ -16,7 +16,7 @@ export default function AboutSectionMission({ sectionType }) {
             Driving Civic Innovation through Technology
           </h2>
         </div>
-        <p className={`about-section-paragraph`}>
+        <p className={`section-paragraph`}>
           At Open Sacramento, we roll up our sleeves and dive into a wide range
           of technology-driven projects. From open data initiatives and
           government service enhancements to community engagement platforms and

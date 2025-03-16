@@ -22,13 +22,11 @@ export default function SingleProjectsScreenshots({ sectionType, data }) {
   return (
     <section id="screenshots" className={`project-screenshots-container`}>
       <div
-        className={`project-main-heading-container projects-main-heading-underline`}
+        className={`project-main-heading-container heading-underline underline-alt`}
       >
-        <h2 className={`project-heading project-heading-underline`}>
-          Screenshots
-        </h2>
+        <h2 className={`project-heading`}>Screenshots</h2>
       </div>
-      <p className={`project-section-paragraph`}>
+      <p className={`section-paragraph project-paragraph`}>
         Explore our project through screenshots, providing visual insights into
         its design and functionality.
       </p>

@@ -11,7 +11,7 @@ export default function ProjectsSectionStart({ sectionType }) {
     <section className={`projects-section-${sectionType}`}>
       <div className={`projects-section-text-container`}>
         <div
-          className={`projects-section-${sectionType}-container projects-section-heading-underline`}
+          className={`projects-section-${sectionType}-container heading-underline`}
         >
           <h1 className={`general-heading-section`}>PROJECTS</h1>
           <h2 className={`projects-heading-section-sub`}>
@@ -19,7 +19,7 @@ export default function ProjectsSectionStart({ sectionType }) {
           </h2>
         </div>
         <div className={`projects-section-${sectionType}-container`}>
-          <p className={`projects-section-paragraph`}>
+          <p className={`section-paragraph-small`}>
             Discover the diverse range of projects at Open Sacramento, where
             we&apos;re using technology and collaboration to tackle civic
             challenges and enhance public services. Join our dedicated team of

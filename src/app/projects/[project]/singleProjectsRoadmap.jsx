@@ -35,11 +35,13 @@ export default function SingleProjectsRoadmap({ sectionType, data }) {
   return (
     <section id="roadmap" className={`project-roadmap-container`}>
       <div
-        className={`project-main-heading-container projects-main-heading-underline`}
+        className={`project-main-heading-container heading-underline underline-alt`}
       >
-        <h2 className={`project-heading project-heading-underline`}>Roadmap</h2>
+        <h2 className={`project-heading project-heading-underline mb-2`}>
+          Roadmap
+        </h2>
       </div>
-      <p className={`project-section-paragraph`}>
+      <p className={`section-paragraph project-section-paragraph`}>
         Know the current progress, scope, and stage of project
       </p>
       <div className={`project-info-container-alt`}>

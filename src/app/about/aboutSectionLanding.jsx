@@ -6,7 +6,7 @@ export default function AboutSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container about-heading-underline`}
+        className={`general-section-${sectionType}-container heading-underline`}
       >
         <h1 className={`general-heading-section`}>About Us</h1>
         <h2 className={`about-sub-heading`}>
@@ -15,7 +15,7 @@ export default function AboutSectionLanding({ sectionType }) {
       </div>
 
       <div className={`general-section-${sectionType}-container`}>
-        <p className={`about-section-paragraph`}>
+        <p className={`section-paragraph`}>
           <span className={`paragraph-bold`}>
             We are a passionate and diverse group of technologists, developers,
             designers, and civic-minded individuals united by a common goal:

@@ -1,12 +1,14 @@
 @use 'abstracts/variables';
 @use 'base/typography.scss';
+@use 'layout/section.scss';
+@use 'layout/header.scss';
 @use 'pages/home.scss';
 @use 'pages/pitch.scss';
+@use 'pages/not-found.scss';
 @use 'pages/about.scss';
 @use 'pages/conduct.scss';
 @use 'pages/contact.scss';
 @use 'pages/faq.scss';
-@use 'pages/get-started.scss';
 @use 'pages/projects.scss';
 @use 'components/extended-menu.scss';
 @use 'components/navigation-bar.scss';
@@ -16,6 +18,4 @@
 @use 'components/page-section.scss';
 @use 'components/slider.scss';
 @use 'components/button.scss';
-@use 'layout/section.scss';
-@use 'layout/header.scss';
 @use 'base/base.scss';

@@ -6,14 +6,14 @@ export default function NameChangeSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container contact-heading-underline`}
+        className={`general-section-${sectionType}-container heading-underline`}
       >
         <h1 className={`general-heading-section`}>Introducing</h1>
         <h2 className={`contact-sub-heading`}>Open Sacramento!</h2>
       </div>
 
       <div className={`general-section-${sectionType}-container`}>
-        <p className={`contact-section-paragraph`}>
+        <p className={`section-paragraph-small`}>
           We're thrilled to announce that{' '}
           <span className={`paragraph-bold`}>
             Code for Sacramento is now Open Sacramento!
@@ -24,7 +24,7 @@ export default function NameChangeSectionLanding({ sectionType }) {
           and solving civic challenges in the Sacramento area.
         </p>
         <br />
-        <p className={`contact-section-paragraph`}>
+        <p className={`section-paragraph`}>
           This rebrand comes in response to the{' '}
           <a href="https://codeforamerica.org/news/reflections-on-the-brigade-networks-next-chapter/">
             end of Code for America's Brigade program
@@ -41,7 +41,7 @@ export default function NameChangeSectionLanding({ sectionType }) {
           and solving civic challenges in the Sacramento area.
         </p>
         <br />
-        <p className={`contact-section-paragraph`}>
+        <p className={`section-paragraph`}>
           From data analysis to design thinking, coding to project management,
           our volunteers bring a wide range of skills to the table. That's what
           makes us special, and that's why we believe this new name truly

@@ -6,7 +6,7 @@ export default function DonateSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container contact-heading-underline`}
+        className={`general-section-${sectionType}-container heading-underline`}
       >
         <h1 className={`general-heading-section`}>Donate</h1>
         <h2 className={`contact-sub-heading`}>
@@ -15,7 +15,7 @@ export default function DonateSectionLanding({ sectionType }) {
       </div>
 
       <div className={`general-section-${sectionType}-container`}>
-        <p className={`contact-section-paragraph`}>
+        <p className={`section-paragraph`}>
           <span className={`paragraph-bold`}>
             Choose the option that suits you best.
           </span>{' '}

@@ -8,7 +8,7 @@ export default function SingleProjectsResources({ sectionType, data }) {
   return (
     <section id="resources" className={`project-resources-container`}>
       <div
-        className={`project-main-heading-container projects-main-heading-underline`}
+        className={`project-main-heading-container heading-underline underline-alt`}
       >
         <h2 className={`project-heading`}>Resources</h2>
       </div>

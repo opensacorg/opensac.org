@@ -6,7 +6,7 @@ export default function ContactSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container contact-heading-underline`}
+        className={`general-section-${sectionType}-container heading-underline`}
       >
         <h1 className={`general-heading-section`}>Contact Us</h1>
         <h2 className={`contact-sub-heading`}>
@@ -15,7 +15,7 @@ export default function ContactSectionLanding({ sectionType }) {
       </div>
 
       <div className={`general-section-${sectionType}-container`}>
-        <p className={`contact-section-paragraph`}>
+        <p className={`section-paragraph`}>
           Get in touch with us through our contact page for questions, ideas, or
           just to say hello.{' '}
           <span className={`paragraph-bold`}>

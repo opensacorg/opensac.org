@@ -28,9 +28,7 @@ export default function PitchPage() {
           large={true}
           className={'split-section-content-container'}
         />
-        <div
-          className={`section-${SectionType.light} landing-section-paragraph`}
-        >
+        <div className={`section-${SectionType.light} section-paragraph-small`}>
           Share your innovative ideas and collaborate with our community to turn
           them into reality. Pitch your project to make a positive impact on
           Sacramento using technology and civic engagement.

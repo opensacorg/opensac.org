@@ -56,14 +56,25 @@
 .heading-underline::after {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
   height: 1px;
   width: 43px;
   border-bottom: 4px solid variables.$neutral-900;
 }
 
-// Refactor multiple declarations of this class.
 .underline-alt::after {
+  border-bottom: 4px solid variables.$neutral-50;
+}
+
+.dark-heading-container {
+  position: relative;
+}
+
+.dark-heading-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 43px;
   border-bottom: 4px solid variables.$neutral-50;
 }

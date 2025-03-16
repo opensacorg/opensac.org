@@ -1,12 +1,10 @@
 export default function SingleProjectsOther({ sectionType, data }) {
   return (
     <section id="other" className={`project-contributor-container`}>
-      <div
-        className={`project-main-heading-container projects-main-heading-underline`}
-      >
+      <div className={`project-main-heading-container heading-underline`}>
         <h2 className={`project-heading project-heading-underline`}>Other</h2>
       </div>
-      <p className={`project-section-paragraph`}>
+      <p className={`section-paragraph-small`}>
         Any volunteers can contribute by writing documentation, generating
         ideas, attending meetings, helping out the community, and more.
       </p>

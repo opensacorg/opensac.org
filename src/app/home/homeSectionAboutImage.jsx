@@ -9,7 +9,7 @@ export default function HomeSectionAboutImage({ sectionType }) {
     >
       <div className={`home-about-container`}>
         <div
-          className={`general-section-${sectionType}-container home-section-heading-underline underline-alt`}
+          className={`general-section-${sectionType}-container heading-underline underline-alt`}
         >
           <h1 className={`general-heading-section general-heading-section-alt`}>
             What we do
@@ -19,7 +19,7 @@ export default function HomeSectionAboutImage({ sectionType }) {
             in Sacramento
           </h2>
         </div>
-        <p className={`home-section-paragraph`}>
+        <p className={`section-paragraph`}>
           Our mission is done by uniting programmers, designers, and other
           talents, we transform ideas into tangible solutions that impact lives
           throughout the Sacramento area. Together, we drive innovation forward,

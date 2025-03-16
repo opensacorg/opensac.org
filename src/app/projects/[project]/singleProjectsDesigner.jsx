@@ -1,14 +1,12 @@
 export default function SingleProjectsDesigner({ sectionType, data }) {
   return (
     <section id="designer" className={`project-contributor-container`}>
-      <div
-        className={`project-main-heading-container projects-main-heading-underline`}
-      >
+      <div className={`project-main-heading-container heading-underline`}>
         <h2 className={`project-heading project-heading-underline`}>
           Designer
         </h2>
       </div>
-      <p className={`project-section-paragraph`}>
+      <p className={`section-paragraph-small`}>
         Designers can actively contribute to the project by creating content,
         updating Figma files, and more.
       </p>

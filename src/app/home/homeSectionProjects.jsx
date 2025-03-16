@@ -11,7 +11,7 @@ export default function HomeSectionProjects({ sectionType }) {
     <section className={`general-section-${sectionType} home-projects-section`}>
       <div className={`home-projects-info-container`}>
         <div
-          className={`home-section-${sectionType.dark}-container home-section-heading-underline underline-alt`}
+          className={`home-section-${sectionType.dark}-container heading-underline underline-alt`}
         >
           <h1 className={`general-heading-section general-heading-section-alt`}>
             our projects
@@ -20,7 +20,7 @@ export default function HomeSectionProjects({ sectionType }) {
             Driving Innovation Through Tech and Collaboration
           </h2>
         </div>
-        <p className={`home-section-paragraph`}>
+        <p className={`section-paragraph`}>
           We tackle tech projects addressing civic issues, enhancing services in
           Sacramento. From open data initiatives to government services and
           community platforms,

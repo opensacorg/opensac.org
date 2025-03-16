@@ -8,11 +8,9 @@ export default function SingleProjectsContribute({
   return (
     <section id="how-to-contribute" className={`project-contribute-container`}>
       <div
-        className={`project-main-heading-container projects-main-heading-underline`}
+        className={`project-main-heading-container heading-underline underline-alt`}
       >
-        <h2 className={`project-heading project-heading-underline`}>
-          How to Contribute
-        </h2>
+        <h2 className={`project-heading`}>How to Contribute</h2>
       </div>
       <p className={`project-paragraph`}>
         Open Sacramento is run by volunteers. We are always looking for help.

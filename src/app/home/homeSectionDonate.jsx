@@ -8,7 +8,7 @@ export default function HomeSectionDonate({ sectionType }) {
   return (
     <section className={`general-section-${sectionType} donate-section`}>
       <div
-        className={`general-section-${sectionType}-container home-section-heading-underline donate-section-underline md:container md:mx-auto`}
+        className={`general-section-${sectionType}-container heading-underline donate-section-underline md:container md:mx-auto`}
       >
         <h1 className={`heading-large-section-sub`}>
           Help Support Open Sacramento
@@ -16,7 +16,9 @@ export default function HomeSectionDonate({ sectionType }) {
       </div>
       <div className={`donate-section-paragraph-container`}>
         <p className={`home-section-${sectionType}-paragraph`}>
-          <span>Your support, whether through donations or volunteering,</span>{' '}
+          <span className={`home-section-${sectionType}-paragraph-bold`}>
+            Your support, whether through donations or volunteering,
+          </span>{' '}
           is instrumental in driving positive change with Open Sacramento.
           <br />
           <br />

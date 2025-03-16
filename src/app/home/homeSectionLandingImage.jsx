@@ -13,7 +13,7 @@ export default function HomeSectionLandingImage() {
             <span>We are</span> <br />
             Open Sacramento
           </h1>
-          <p className={`home-section-paragraph`}>
+          <p className={`section-paragraph`}>
             Join us to address civic challenges and enhance public services for
             Sacramento residents through technology and open data. Volunteer now
             for a better future!

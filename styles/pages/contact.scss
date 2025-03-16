@@ -4,23 +4,10 @@
 /*
 contact page layout
  */
-.contact-heading-underline::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid variables.$neutral-900;
-}
 
 .contact-sub-heading {
   @include mixins.h1-semi-bold;
   margin: 10px 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.h1-small-semi-bold;
-  }
 }
 
 .contact-underline-alt::after {

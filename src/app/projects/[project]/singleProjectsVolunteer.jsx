@@ -9,9 +9,7 @@ export default function SingleProjectsVolunteer({ sectionType }) {
     <section id="how-to-volunteer" className={`project-volunteer-container`}>
       <div className={`project-volunteer-info-container`}>
         <p className={`project-type`}>Volunteer</p>
-        <div
-          className={`project-main-heading-container projects-main-heading-underline`}
-        >
+        <div className={`project-main-heading-container heading-underline`}>
           <h2 className={`project-heading project-heading-underline`}>
             Why Join Open Sacramento?
           </h2>
