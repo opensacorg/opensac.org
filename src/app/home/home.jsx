@@ -23,7 +23,7 @@ export const SectionType = {
  */
 export default function Home() {
   return (
-    <div className="home-page-container">
+    <div className="">
       <HomeSectionLandingImage sectionType={SectionType.dark}/>
       <HomeSectionDefault2 sectionType={SectionType.light}/>
       <HomeSectionAboutImage sectionType={SectionType.dark}/>

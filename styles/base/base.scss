@@ -1,6 +1,8 @@
+@use "../abstracts/variables";
+
 html,
 body {
-  background: var(--color-navbar);
+  background: variables.$navbar-color;
   scroll-padding-top: 80px;
   scroll-behavior: smooth;
 }
