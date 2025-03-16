@@ -1,6 +1,6 @@
 import { Slider } from '@/components/ui'
 
-export default function SingleProjectsScreenshots({ sectionType, data }) {
+export default function SingleProjectsScreenshots({ data }) {
   let shownImages = data.meta.screenshots.map((screenshot) => (
     <div
       key={data.full_name.concat(screenshot)}

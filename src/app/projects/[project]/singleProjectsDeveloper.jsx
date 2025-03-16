@@ -1,4 +1,4 @@
-export default function SingleProjectsDeveloper({ sectionType, data }) {
+export default function SingleProjectsDeveloper({ data }) {
   return (
     <section id="developer" className={`project-contributor-container`}>
       <div

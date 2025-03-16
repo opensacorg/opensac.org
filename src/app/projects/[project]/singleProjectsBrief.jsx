@@ -1,4 +1,4 @@
-export default function SingleProjectsBrief({ sectionType, data }) {
+export default function SingleProjectsBrief({ data }) {
   return (
     <section id="project-brief" className={`project-brief-container`}>
       <div

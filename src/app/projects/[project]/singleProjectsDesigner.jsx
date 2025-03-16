@@ -1,4 +1,4 @@
-export default function SingleProjectsDesigner({ sectionType, data }) {
+export default function SingleProjectsDesigner({ data }) {
   return (
     <section id="designer" className={`project-contributor-container`}>
       <div className={`project-main-heading-container heading-underline`}>

@@ -1,7 +1,6 @@
 import Button from '@/components/Buttons'
 
 export default function SingleProjectsContribute({
-  sectionType,
   contributeAs,
   setContributeAs,
 }) {

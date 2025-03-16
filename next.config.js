@@ -8,13 +8,6 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-  webpack: (config) => {
-    config.resolve.fallback = {
-      fs: false,
-    }
-
-    return config
-  },
   eslint: {
     ignoreDuringBuilds: true,
   },

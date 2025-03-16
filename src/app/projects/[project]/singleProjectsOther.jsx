@@ -1,4 +1,4 @@
-export default function SingleProjectsOther({ sectionType, data }) {
+export default function SingleProjectsOther({ data }) {
   return (
     <section id="other" className={`project-contributor-container`}>
       <div className={`project-main-heading-container heading-underline`}>

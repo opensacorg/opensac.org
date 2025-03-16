@@ -1,13 +1,13 @@
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import Link from 'next/link'
-import { useState } from 'react'
+import {useState} from 'react'
 
 /**
  * contact mission section.
  * @returns {JSX.Element}
  */
-export default function ContactSectionMission({ sectionType }) {
+export default function ContactSectionMission({sectionType}) {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
@@ -62,7 +62,7 @@ export default function ContactSectionMission({ sectionType }) {
       </div>
       <div className="form-holder mission-container">
         <form>
-          <div className="name-holder form-input">
+          <div className="form-input">
             <TextField
               id="standard-helperText"
               label="First Name"

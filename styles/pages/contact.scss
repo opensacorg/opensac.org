@@ -10,34 +10,12 @@ contact page layout
   margin: 10px 0;
 }
 
-.contact-underline-alt::after {
-  border-bottom: 4px solid variables.$neutral-50;
-}
-
-.contact-section-paragraph {
-  @include mixins.subheading-regular;
-  margin: 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.p3-regular;
-    max-width: 100%;
-  }
-}
-
 .contact-light-section {
   padding: 7%;
   background-color: variables.$secondary-50;
 
   @media (max-width: variables.$screen-md) {
     padding: 16px;
-  }
-}
-
-.contact-heading-container {
-  position: relative;
-
-  @media (max-width: variables.$screen-md) {
-    width: 100%;
   }
 }
 

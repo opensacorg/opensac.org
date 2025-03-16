@@ -41,7 +41,7 @@ export default function SingleProject({ githubFullName }) {
   const { data, error, isLoading } = useSWR(
     `https://api.github.com/repos/${githubFullName}`,
     fetcher,
-    { shouldRetryOnError: false }, // Auto retries quickly exhaust unauthenticated api requests to github, which breaks the page
+    { shouldRetryOnError: false }, // Auto retries quickly exhaust unauthenticated api requests to GitHub, which breaks the page
   )
 
   if (error) return <div>failed to load</div>

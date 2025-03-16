@@ -63,15 +63,6 @@ Home page layout.
   }
 }
 
-.home-section-landing-image {
-  display: none;
-
-  @media (max-width: variables.$screen-sm) {
-    display: block;
-    width: 100%;
-  }
-}
-
 .home-buttons-group {
   width: fit-content;
   display: flex;

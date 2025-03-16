@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function SingleProjectsResources({ sectionType, data }) {
+export default function SingleProjectsResources({ data }) {
   if (!data.meta.resources) {
     return <section id="resources" className={``}></section>
   }

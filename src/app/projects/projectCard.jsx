@@ -6,7 +6,6 @@ import Button from '@/components/Buttons'
  */
 export default function ProjectCard({
   isLoading,
-  sectionType,
   projectStatus,
   projectTitle,
   projectText,

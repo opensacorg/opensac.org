@@ -171,20 +171,6 @@ It is made up of three sections.
   box-shadow: 0 4px 4px 0 rgba(variables.$navbar-color, 0.25);
 }
 
-.navbar-extended-parent-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-
-  a,
-  a:visited,
-  a:link,
-  a:active {
-    color: variables.$secondary-500;
-  }
-}
-
 .navbar-extend-button-text {
   visibility: hidden;
 }

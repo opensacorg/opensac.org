@@ -245,14 +245,6 @@ Projects page layout.
   border-bottom: 1px solid variables.$neutral-900;
 }
 
-.projects-container-margins {
-  margin: 0 80px;
-
-  @media (max-width: variables.$screen-md) {
-    margin: 0 40px;
-  }
-}
-
 .projects-nav-light {
   color: variables.$neutral-900;
   border: 1px solid variables.$primary-500;
@@ -263,11 +255,6 @@ Projects page layout.
   @media (max-width: variables.$screen-md) {
     margin: 0 40px;
   }
-}
-
-.projects-nav {
-  justify-content: left;
-  padding: 20px;
 }
 
 .projects-nav a {
@@ -313,12 +300,6 @@ Projects page layout.
   }
 }
 
-.projects-question,
-details {
-  border-top: 1px solid variables.$neutral-400;
-  padding: 0 20px;
-}
-
 details > summary {
   list-style: none;
 }
@@ -354,25 +335,6 @@ details h4::after {
 details[open] h4::after {
   content: '';
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M18 12H6' stroke='%23060718' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
-}
-
-.question-text,
-details p {
-  @include mixins.p3-regular;
-  max-width: 1060px;
-  color: variables.$neutral-900;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 20px;
-
-  @media (max-width: variables.$screen-md) {
-    color: variables.$neutral-800;
-    @include mixins.p2-regular;
-  }
-}
-
-.question-open .question-text {
-  display: block;
 }
 
 /* ProjectCard Selectors */
@@ -581,15 +543,6 @@ details p {
 .project-main-heading-container {
   position: relative;
   padding-bottom: 12px;
-}
-
-.projects-main-heading-underline::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid white;
 }
 
 .project-button-container {

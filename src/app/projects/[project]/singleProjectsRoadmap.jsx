@@ -1,7 +1,7 @@
 import moment from 'moment'
 import SingleProjectsRoadmapMilestone from './singleProjectsRoadmapMilestone.jsx'
 
-export default function SingleProjectsRoadmap({ sectionType, data }) {
+export default function SingleProjectsRoadmap({ data }) {
   const milestones = parseRoadmapMilestones(data.meta.roadmap)
   parseRoadmapTimelineStatus(data.meta.roadmap)
 

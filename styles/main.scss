@@ -3,7 +3,6 @@
 @use 'layout/section.scss';
 @use 'layout/header.scss';
 @use 'pages/home.scss';
-@use 'pages/pitch.scss';
 @use 'pages/not-found.scss';
 @use 'pages/about.scss';
 @use 'pages/conduct.scss';
@@ -17,4 +16,5 @@
 @use 'components/instructions.scss';
 @use 'components/slider.scss';
 @use 'components/button.scss';
+@use 'components/opportunities.scss';
 @use 'base/base.scss';

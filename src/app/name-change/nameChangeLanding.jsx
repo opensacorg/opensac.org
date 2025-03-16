@@ -14,11 +14,11 @@ export default function NameChangeSectionLanding({ sectionType }) {
 
       <div className={`general-section-container`}>
         <p className={`section-paragraph-small`}>
-          We're thrilled to announce that{' '}
+          We&#39;re thrilled to announce that{' '}
           <span className={`paragraph-bold`}>
             Code for Sacramento is now Open Sacramento!
           </span>{' '}
-          While our name has changed, we're still the same passionate,
+          While our name has changed, we&#39;re still the same passionate,
           volunteer-driven community of technologists, developers, designers,
           and civic-minded individuals dedicated to improving public services
           and solving civic challenges in the Sacramento area.

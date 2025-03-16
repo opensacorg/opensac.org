@@ -7,16 +7,16 @@ Data files from the old website codeforsac.org.
 ```yaml
 - name: Trinity Technology Group
   logo: trinity_technology_group.png
-  website: http://trinitytg.com/
+  website: https://trinitytg.com/
 - name: Symsoft
   logo: symsoft.png
-  website: http://www.symsoftsolutions.com/
+  website:https:///www.symsoftsolutions.com/
 - name: Hacker Lab
   logo: hacker_lab.png
-  website: http://hackerlab.org/
+  websitehttps:////hackerlab.org/
 - name: The Urban Hive
   logo: the_urban_hive.png
-  website: http://www.theurbanhive.com/
+  websithttps://://www.theurbanhive.com/
 ```
 
 ### supporters.yml
@@ -24,7 +24,7 @@ Data files from the old website codeforsac.org.
 ```yaml
 - name: City of Sacramento
   logo: city_of_sacramento.png
-  website: http://www.cityofsacramento.org/
+  website: https://www.cityofsacramento.org/
 ```
 
 ### featured-apps.yml
@@ -34,11 +34,11 @@ Data files from the old website codeforsac.org.
 - name: Open Budget Sacramento
   description: Visualize where the money comes from and how it's spent. Drill into the details of income and spending.
   image: openbudget.png
-  url: http://openbudgetsac.org/
+  url: https://openbudgetsac.org/
 - name: Trash-AI
   description: Developing machine learning technology to identify trash in images.
   image: trashai.png
-  url: http://trashai.org/
+  url:https:///trashai.org/
 - name: Learning Blocks
   description: API assisting the gathering and reporting of student grant data.
   image: learningBlocks.png

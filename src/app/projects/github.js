@@ -1,22 +1,22 @@
-import { githubOwner, githubProject } from '@/constants'
+import {githubOwner, githubProject} from '@/constants'
 import * as yaml from 'yaml'
 
 /**
- * Fetches project data from github
+ * Fetches project data from GitHub
  *
  * This will look through each repository for a meta.yml file
  * If the project has this file, it will gather all project information
  * needed to populate the ProjectCard component
  *
- * Note: Github has a rate limit (at time of writing) of 60 requests per hour per ip address
+ * Note: GitHub has a rate limit (at time of writing) of 60 requests per hour per ip address
  * for unauthenticated requests.  This means there's a chance that this page will not load properly
  * If the user is refreshing frequently.
  *
  * It may be useful to cache this data and only re-fetch on longer intervals if this becomes a frequent issue.
  * See https://swr.vercel.app/docs/advanced/cache#localstorage-based-persistent-cache
  *
- * @param  ghFullResponses, format here: https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28
- * @returns array of github api response & meta fields
+ * @returns array of GitHub api response & meta fields
+ * @param ghFullResponses
  */
 export const fetchGithubProjectData = async (ghFullResponses) => {
   const data = await Promise.all(ghFullResponses.map(fetchGithubSingleProject))
@@ -26,28 +26,28 @@ export const fetchGithubProjectData = async (ghFullResponses) => {
 }
 
 /**
- * Fetches project data from github
+ * Fetches project data from GitHub
  *
  * This will look for a meta.yml file in the project to populate data
  *
- * Note: Github has a rate limit (at time of writing) of 60 requests per hour per ip address
+ * Note: GitHub has a rate limit (at time of writing) of 60 requests per hour per ip address
  * for unauthenticated requests.  This means there's a chance that this page will not load properly
  * If the user is refreshing frequently.
  *
  * It may be useful to cache this data and only re-fetch on longer intervals if this becomes a frequent issue.
  * See https://swr.vercel.app/docs/advanced/cache#localstorage-based-persistent-cache
  *
- * @param  ghResponse, format here: https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository
  * @returns github api response & meta fields
+ * @param ghResponse
  */
 export const fetchGithubSingleProject = async (ghResponse) => {
   const ghData = mapGhData(ghResponse)
   const meta = await fetchMetaFile(ghData.full_name, ghData.default_branch)
   return meta
     ? {
-        ...ghData,
-        meta,
-      }
+      ...ghData,
+      meta,
+    }
     : null
 }
 
@@ -102,7 +102,7 @@ const metaFile = 'meta.yml'
  design:
  time_range: September 1, 2023 - October 5, 2023
  objective: Create and iterate on figma designs for the website
- outcome: Completed figma desgins for all pages, enabling development to begin
+ outcome: Completed figma designs for all pages, enabling development to begin
  development:
  time_range: October 6, 2023 - April 1, 2023
  objective: Create react application reflecting figma designs
@@ -119,8 +119,10 @@ const metaFile = 'meta.yml'
  screenshots:
  - opensac.jpg
  *
- * @param string ghFullName, in the form of "owner/repo"
- * @returns
+ * @param ghFullName
+ * @param defaultBranchName
+ * @param ghFullName
+ * @param defaultBranchName
  */
 const fetchMetaFile = async (ghFullName, defaultBranchName) => {
   console.dir(`${ghFullName}/${githubProject}`)
@@ -138,11 +140,11 @@ const fetchMetaFile = async (ghFullName, defaultBranchName) => {
   if (metaResponse.status === 404) {
     return null
   } else if (!metaResponse.ok) {
-    throw new Error(`Error fetching meta file: ${metaResponse.text()}`)
+    throw new Error(`Error fetching meta file: ${await metaResponse.text()}`)
   }
-  const textReponse = await metaResponse.text()
+  const textResponse = await metaResponse.text()
 
-  return yaml.parse(textReponse)
+  return yaml.parse(textResponse)
 }
 
 const localMetaYaml = yaml.parse(`

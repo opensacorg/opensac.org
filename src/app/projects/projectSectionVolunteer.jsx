@@ -5,7 +5,7 @@ import Link from 'next/link'
  * Not implemented yet. Styles are only available for mobile on Figma.
  * @returns {JSX.Element}
  */
-export default function projectSectionVolunteer({ sectionType }) {
+export default function projectSectionVolunteer() {
   return (
     <section id="how-to-volunteer" className={`project-volunteer-container`}>
       <div className={`project-volunteer-info-container`}>

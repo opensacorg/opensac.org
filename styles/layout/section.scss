@@ -67,20 +67,6 @@
   }
 }
 
-.split-section-container {
-  padding: 96px 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-
-  @media (max-width: variables.$screen-md) {
-    padding: 48px 40px;
-    flex-direction: column;
-  }
-}
-
 .split-section-content-container {
   @media (max-width: variables.$screen-md) {
     width: 100%;

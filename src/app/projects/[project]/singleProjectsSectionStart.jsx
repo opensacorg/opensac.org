@@ -6,7 +6,7 @@ import Button from '@/components/Buttons'
  *
  * @returns {JSX.Element}
  */
-export default function SingleProjectsSectionStart({ sectionType, data }) {
+export default function SingleProjectsSectionStart({ data }) {
   return (
     <section id="project-section-start" className={`project-section-start`}>
       <div
