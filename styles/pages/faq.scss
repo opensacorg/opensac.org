@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /*
 FAQ page layout.
@@ -9,7 +9,7 @@ FAQ page layout.
   position: absolute;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-900;
+  border-bottom: 4px solid variables.$neutral-900;
 }
 
 .faq-heading-section-sub {
@@ -17,36 +17,36 @@ FAQ page layout.
 }
 
 .faq-section-paragraph {
-  @include p3-regular;
+  @include mixins.p3-regular;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
 
 .faq-main {
-  background-color: $secondary-50;
+  background-color: variables.$secondary-50;
   padding-bottom: 50px;
-  border-bottom: 1px solid $neutral-900;
+  border-bottom: 1px solid variables.$neutral-900;
 }
 
 .faq-container-margins {
   margin: 0 80px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     margin: 0 40px;
   }
 }
 
 .faq-nav-light {
-  color: $neutral-900;
-  border: 1px solid $primary-500;
+  color: variables.$neutral-900;
+  border: 1px solid variables.$primary-500;
   border-left: none;
   border-right: none;
   margin: 0 80px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     margin: 0 40px;
   }
 }
@@ -57,18 +57,18 @@ FAQ page layout.
 }
 
 .faq-nav a {
-  @include nav-semi-bold;
-  color: $primary-500;
+  @include mixins.nav-semi-bold;
+  color: variables.$primary-500;
   text-decoration: none;
   margin-right: 20px;
   display: inline-block;
   padding: 5px 0;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     font-size: 16px;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     display: block;
     font-size: 20px;
     width: 100%;
@@ -76,12 +76,12 @@ FAQ page layout.
 }
 
 .faq-container-margins h3 {
-  @include h4-semi-bold;
+  @include mixins.h4-semi-bold;
   padding: 40px 0;
   margin-top: 40px;
 
-  @media (max-width: $screen-md) {
-    @include h5-semi-bold;
+  @media (max-width: variables.$screen-md) {
+    @include mixins.h5-semi-bold;
   }
 }
 
@@ -90,10 +90,10 @@ FAQ page layout.
 }
 
 .faq-container-margins h4 {
-  @include h5-semi-bold;
+  @include mixins.h5-semi-bold;
   padding: 24px 0;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     font-size: 16px;
     font-weight: 700;
   }
@@ -101,7 +101,7 @@ FAQ page layout.
 
 .faq-question,
 details {
-  border-top: 1px solid $neutral-400;
+  border-top: 1px solid variables.$neutral-400;
   padding: 0 20px;
 }
 
@@ -144,16 +144,16 @@ details[open] h4::after {
 
 .question-text,
 details p {
-  @include p3-regular;
+  @include mixins.p3-regular;
   max-width: 1060px;
-  color: $neutral-900;
+  color: variables.$neutral-900;
   margin: 0;
   padding-top: 0;
   padding-bottom: 20px;
 
-  @media (max-width: $screen-md) {
-    color: $neutral-800;
-    @include p2-regular;
+  @media (max-width: variables.$screen-md) {
+    color: variables.$neutral-800;
+    @include mixins.p2-regular;
   }
 }
 

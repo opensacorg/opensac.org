@@ -1,0 +1,11 @@
+html,
+body {
+  background: var(--color-navbar);
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}

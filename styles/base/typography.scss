@@ -1,16 +1,17 @@
-@import "../abstracts/mixins";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 /*
 Application typography. The Inter font family is applied by next/font in layout.js.
  */
 
 .paragraph-bold {
-  @include subheading-bold;
+  @include mixins.subheading-bold;
 }
 
 .general-section-light {
-  color: $neutral-900;
-  background-color: $secondary-50;
+  color: variables.$neutral-900;
+  background-color: variables.$secondary-50;
   padding: 96px 80px;
   display: flex;
   flex-direction: row;
@@ -18,7 +19,7 @@ Application typography. The Inter font family is applied by next/font in layout.
   justify-content: center;
   gap: 24px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 48px 40px;
     flex-direction: column;
   }

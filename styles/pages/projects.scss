@@ -1,20 +1,20 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
-@import "../base/animations";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/animations";
 
 /*
 Projects page layout.
  */
 
 .projects-section-light {
-  color: $neutral-900;
-  background-color: $secondary-50;
+  color: variables.$neutral-900;
+  background-color: variables.$secondary-50;
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     padding: 96px 80px;
     flex-direction: row;
     justify-content: space-between;
@@ -27,7 +27,7 @@ Projects page layout.
   flex-direction: column;
   gap: 24px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     max-width: 50%;
   }
 }
@@ -41,30 +41,30 @@ Projects page layout.
   position: absolute;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-900;
+  border-bottom: 4px solid variables.$neutral-900;
 }
 
 .projects-heading-section-sub {
   margin: 10px 0;
   max-width: 450px;
-  @include h2-semi-bold;
+  @include mixins.h2-semi-bold;
 
-  @media (max-width: $screen-sm) {
-    @include h3-semi-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h3-semi-bold;
   }
 }
 
 .projects-section-paragraph {
-  @include p3-regular;
+  @include mixins.p3-regular;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
 
 .meeting-card-container {
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,13 +72,13 @@ Projects page layout.
 }
 
 .meeting-card {
-  border-top: 1px solid $neutral-500;
-  border-bottom: 1px solid $neutral-500;
+  border-top: 1px solid variables.$neutral-500;
+  border-bottom: 1px solid variables.$neutral-500;
 
   ul {
     padding: 20px 10px;
-    border-top: 1px solid $neutral-500;
-    border-bottom: 1px solid $neutral-500;
+    border-top: 1px solid variables.$neutral-500;
+    border-bottom: 1px solid variables.$neutral-500;
     width: 100%;
     list-style-position: inside;
     display: flex;
@@ -107,19 +107,19 @@ Projects page layout.
   }
 
   .meeting-card-heading {
-    @include p3-bold;
+    @include mixins.p3-bold;
   }
 
   .meeting-card-list-item-text {
     margin-left: 10px;
-    @include p3-regular;
+    @include mixins.p3-regular;
     position: relative;
     top: -5px;
   }
 
   .meeting-card-link {
-    @include p3-semi-bold;
-    color: $neutral-900;
+    @include mixins.p3-semi-bold;
+    color: variables.$neutral-900;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -129,8 +129,8 @@ Projects page layout.
     margin-left: 5px;
   }
 
-  @media (min-width: $screen-lg) {
-    border: 1px solid $neutral-500;
+  @media (min-width: variables.$screen-lg) {
+    border: 1px solid variables.$neutral-500;
     border-radius: 20px;
     min-width: 402px;
 
@@ -201,8 +201,8 @@ Projects page layout.
     row-gap: 24px;
 
     label {
-      @include p1-bold;
-      color: $primary-900;
+      @include mixins.p1-bold;
+      color: variables.$primary-900;
     }
 
     select {
@@ -224,17 +224,17 @@ Projects page layout.
 
   input,
   select {
-    border: 1px solid $neutral-400;
+    border: 1px solid variables.$neutral-400;
     background: none;
   }
 
   input::placeholder,
   select {
-    @include p2-regular;
-    color: $neutral-800;
+    @include mixins.p2-regular;
+    color: variables.$neutral-800;
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     padding: 0px 80px 40px 80px;
 
     .project-search-form {
@@ -248,7 +248,7 @@ Projects page layout.
     }
   }
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     .project-search-form {
       grid-template-columns: 2.06fr 1fr;
       grid-column-gap: 24px;
@@ -257,27 +257,27 @@ Projects page layout.
 }
 
 .projects-main {
-  background-color: $secondary-50;
+  background-color: variables.$secondary-50;
   padding-bottom: 50px;
-  border-bottom: 1px solid $neutral-900;
+  border-bottom: 1px solid variables.$neutral-900;
 }
 
 .projects-container-margins {
   margin: 0 80px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     margin: 0 40px;
   }
 }
 
 .projects-nav-light {
-  color: $neutral-900;
-  border: 1px solid $primary-500;
+  color: variables.$neutral-900;
+  border: 1px solid variables.$primary-500;
   border-left: none;
   border-right: none;
   margin: 0 80px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     margin: 0 40px;
   }
 }
@@ -288,18 +288,18 @@ Projects page layout.
 }
 
 .projects-nav a {
-  @include nav-semi-bold;
-  color: $primary-500;
+  @include mixins.nav-semi-bold;
+  color: variables.$primary-500;
   text-decoration: none;
   margin-right: 20px;
   display: inline-block;
   padding: 5px 0;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     font-size: 16px;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     display: block;
     font-size: 20px;
     width: 100%;
@@ -307,12 +307,12 @@ Projects page layout.
 }
 
 .projects-container-margins h3 {
-  @include h4-semi-bold;
+  @include mixins.h4-semi-bold;
   padding: 40px 0;
   margin-top: 40px;
 
-  @media (max-width: $screen-md) {
-    @include h5-semi-bold;
+  @media (max-width: variables.$screen-md) {
+    @include mixins.h5-semi-bold;
   }
 }
 
@@ -321,10 +321,10 @@ Projects page layout.
 }
 
 .projects-container-margins h4 {
-  @include h5-semi-bold;
+  @include mixins.h5-semi-bold;
   padding: 24px 0;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     font-size: 16px;
     font-weight: 700;
   }
@@ -332,7 +332,7 @@ Projects page layout.
 
 .projects-question,
 details {
-  border-top: 1px solid $neutral-400;
+  border-top: 1px solid variables.$neutral-400;
   padding: 0 20px;
 }
 
@@ -375,16 +375,16 @@ details[open] h4::after {
 
 .question-text,
 details p {
-  @include p3-regular;
+  @include mixins.p3-regular;
   max-width: 1060px;
-  color: $neutral-900;
+  color: variables.$neutral-900;
   margin: 0;
   padding-top: 0;
   padding-bottom: 20px;
 
-  @media (max-width: $screen-md) {
-    color: $neutral-800;
-    @include p2-regular;
+  @media (max-width: variables.$screen-md) {
+    color: variables.$neutral-800;
+    @include mixins.p2-regular;
   }
 }
 
@@ -400,15 +400,15 @@ details p {
   grid-column-gap: 24px;
   grid-row-gap: 32px;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: variables.$screen-md) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     padding: 0 80px;
   }
 
-  @media (min-width: $screen-xxl) {
+  @media (min-width: variables.$screen-xxl) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -416,7 +416,7 @@ details p {
 .project-card-container {
   display: flex;
   flex-direction: column;
-  color: $neutral-900;
+  color: variables.$neutral-900;
   padding: 0px;
   min-width: 300px;
 }
@@ -428,8 +428,8 @@ details p {
 }
 
 .project-card-img-status {
-  @include h6-semi-bold;
-  color: $neutral-50;
+  @include mixins.h6-semi-bold;
+  color: variables.$neutral-50;
   position: relative;
   text-align: center;
   width: fit-content;
@@ -460,23 +460,23 @@ details p {
   gap: 5px;
   margin: 24px 0 16px 0;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: variables.$screen-md) {
     align-items: flex-start;
     min-height: 47px;
   }
 }
 
 .project-card-tag {
-  @include h6-semi-bold;
-  color: $primary-100;
+  @include mixins.h6-semi-bold;
+  color: variables.$primary-100;
   border-radius: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: $primary-500;
+  background-color: variables.$primary-500;
 }
 
 .project-card-heading {
-  @include h4-bold;
+  @include mixins.h4-bold;
   margin: 0;
 }
 
@@ -487,12 +487,12 @@ details p {
 }
 
 .project-card-description {
-  @include p1-regular;
+  @include mixins.p1-regular;
 }
 
 .project-card-last-updated {
-  @include p1-regular;
-  color: $neutral-700;
+  @include mixins.p1-regular;
+  color: variables.$neutral-700;
   margin-top: 16px;
 }
 
@@ -504,13 +504,13 @@ details p {
 }
 
 .project-heading-section {
-  color: $neutral-300;
-  @include h1-section;
+  color: variables.$neutral-300;
+  @include mixins.h1-section;
   margin: 0;
 }
 
 .project-heading-section-alt {
-  color: $secondary-500;
+  color: variables.$secondary-500;
 }
 
 .project-card-loading {
@@ -524,74 +524,74 @@ details p {
   padding: 0 24px;
   text-align: center;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
       padding: 0 80px;
     }
 }
 
 .project-cards-load-status-text {
-  color: $neutral-900;
-  @include p3-regular;
+  color: variables.$neutral-900;
+  @include mixins.p3-regular;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
 
 /* SingleProject */
 
 .project-section-dark {
-  background: $neutral-900;
+  background: variables.$neutral-900;
   padding: 0 24px;
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     padding: 0 80px;
   }
 }
 
 .project-info-label {
-  @include nav-semi-bold;
-  color: $neutral-200;
+  @include mixins.nav-semi-bold;
+  color: variables.$neutral-200;
 }
 
 .project-info-text {
-  @include subheading-regular;
-  color: $neutral-200;
+  @include mixins.subheading-regular;
+  color: variables.$neutral-200;
 }
 
 .project-info-alt {
-  @include p1-regular;
-  color: $neutral-300;
+  @include mixins.p1-regular;
+  color: variables.$neutral-300;
 }
 
 .project-info-link {
-  @include subheading-bold;
-  color: $primary-100;
+  @include mixins.subheading-bold;
+  color: variables.$primary-100;
 }
 
 .project-paragraph {
-  @include p3-regular;
-  color: $neutral-50;
+  @include mixins.p3-regular;
+  color: variables.$neutral-50;
 }
 
 .project-paragraph-alt {
-  @include p3-regular;
-  color: $neutral-200;
+  @include mixins.p3-regular;
+  color: variables.$neutral-200;
 }
 
 .project-section-paragraph {
-  @include subheading-regular;
-  color: $neutral-50;
+  @include mixins.subheading-regular;
+  color: variables.$neutral-50;
 }
 
 .project-type {
-  @include h1-section;
-  color: $secondary-500;
+  @include mixins.h1-section;
+  color: variables.$secondary-500;
 }
 
 .project-heading {
-  @include h1-small-semi-bold;
-  color: $secondary-50;
+  @include mixins.h1-small-semi-bold;
+  color: variables.$secondary-50;
 }
 
 .project-main-heading-container {
@@ -616,7 +616,7 @@ details p {
 .project-info-line {
   height: 1px;
   border: none;
-  background: $neutral-400;
+  background: variables.$neutral-400;
 }
 
 /* SingleProjectsSectionStart */
@@ -627,7 +627,7 @@ details p {
   gap: 32px;
   padding: 26px 0 50px 0;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     padding: 96px 0 93px 0;
     flex-direction: row;
     align-items: start;
@@ -644,7 +644,7 @@ details p {
   background-repeat: no-repeat;
   border: 1px solid #FFFFFF;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     padding-bottom: 32%;
     order: 2;
   }
@@ -655,7 +655,7 @@ details p {
   flex-direction: column;
   gap: 32px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     order: 1;
     max-width: 411px;
   }
@@ -667,8 +667,8 @@ details p {
 
 .project-status-label {
   display: inline-block;
-  border: 1px solid $secondary-200;
-  color: $secondary-200;
+  border: 1px solid variables.$secondary-200;
+  color: variables.$secondary-200;
   margin-right: auto;
   padding: 5px 8px;
 }
@@ -676,15 +676,15 @@ details p {
 /* SingleProjectsLinks */
 
 .project-link-container {
-  background: $neutral-900;
+  background: variables.$neutral-900;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border-top: 1px solid $secondary-50;
-  border-bottom: 1px solid $secondary-50;
+  border-top: 1px solid variables.$secondary-50;
+  border-bottom: 1px solid variables.$secondary-50;
   padding: 16px 0;
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     position: sticky;
     top: 84px;
     z-index: 5;
@@ -695,8 +695,8 @@ details p {
 }
 
 .project-heading-alt {
-  @include nav-semi-bold;
-  color: $secondary-500;
+  @include mixins.nav-semi-bold;
+  color: variables.$secondary-500;
   text-decoration: none;
 }
 
@@ -705,7 +705,7 @@ details p {
 .project-brief-container {
   padding-top: 72px;
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     padding-top: 58px;
     scroll-margin-top: 32px;
   }
@@ -721,7 +721,7 @@ details p {
   row-gap: 16px;
   padding: 8px 0 24px 0;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     grid-template-columns: 1fr 2fr;
     column-gap: 0;
     padding: 12px 0;
@@ -733,11 +733,11 @@ details p {
 .project-screenshots-container {
   padding: 20px 0 34px 0;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: variables.$screen-md) {
     padding: 20px 0 42px 0;
   }
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     scroll-margin-top: 70px;
   }
 }
@@ -749,13 +749,13 @@ details p {
 .project-screenshots-images-container {
   display: none;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: variables.$screen-md) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
     row-gap: 32px;
   }
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     margin-top: 76px;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -782,7 +782,7 @@ details p {
 .project-roadmap-container {
   padding: 68px 0 20px 0;
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     scroll-margin-top: 22px;
   }
 }
@@ -794,25 +794,25 @@ details p {
 .project-info-container-alt {
   margin-top: 44px;
   
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .project-roadmap-milestone-container {
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     display: flex;
     justify-content: center;
     padding-right: 24px;
   }
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     padding-right: 80px;
   }
 }
 
 .project-roadmap-details-container {
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     display: flex;
     justify-content: flex-end;
   }
@@ -823,14 +823,14 @@ details p {
 }
 
 .project-roadmap-details-container * {
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     max-width: 560px;
   }
 }
 
 .project-roadmap-info-label {
-  @include p2-bold;
-  color: $neutral-200;
+  @include mixins.p2-bold;
+  color: variables.$neutral-200;
   text-transform: capitalize;
 }
 
@@ -850,8 +850,8 @@ details p {
 }
 
 .project-roadmap-info-label-two {
-  @include h5-semi-bold;
-  color: $secondary-50;
+  @include mixins.h5-semi-bold;
+  color: variables.$secondary-50;
   margin-top: 20px;
 }
 
@@ -868,7 +868,7 @@ details p {
 .project-contribute-container {
   padding: 24px 0 32px 0;
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     padding: 54px 0 32px 0;
     scroll-margin-top: 36px;
   }
@@ -887,7 +887,7 @@ details p {
 .project-contributor-container {
   padding: 20px 0 48px 0;
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     padding: 48px 0 48px 0;
   }
 }
@@ -901,7 +901,7 @@ details p {
 .project-resources-container {
   padding: 20px 0 48px 0;
   
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     padding: 48px 0;
     scroll-margin-top: 42px;
   }
@@ -918,11 +918,11 @@ details p {
   display: grid;
   grid-template-columns: 1fr;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     grid-template-columns: 2fr 1fr;
   }
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: variables.$screen-xl) {
     padding: 48px 0;
     scroll-margin-top: 42px;
   }
@@ -955,8 +955,8 @@ details p {
 }
 
 .project-volunteer-anchor {
-  @include h4-bold;
-  color: $primary-900;
+  @include mixins.h4-bold;
+  color: variables.$primary-900;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -965,5 +965,5 @@ details p {
 }
 
 .project-volunteer-link {
-  color: $primary-500;
+  color: variables.$primary-500;
 }

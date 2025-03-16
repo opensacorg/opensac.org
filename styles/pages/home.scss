@@ -1,6 +1,6 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
-@import "../base/animations";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/animations";
 
 /*
 Home page layout.
@@ -11,14 +11,14 @@ Home page layout.
   background-size: contain;
   background-position: right bottom;
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     background-image: none;
   }
 }
 
 .home-landing-background {
-  background-color: $landing-background-color;
-  color: $neutral-50;
+  background-color: variables.$landing-background-color;
+  color: variables.$neutral-50;
 }
 
 .home-landing-container {
@@ -29,44 +29,44 @@ Home page layout.
   flex-direction: column;
   justify-content: center;
   gap: 24px;
-  color: $neutral-50;
+  color: variables.$neutral-50;
 
-  @media (max-width: $screen-xl) {
+  @media (max-width: variables.$screen-xl) {
     width: 70%;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: auto;
     justify-content: flex-start;
     padding: 30% 40px 60px;
   }
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     min-height: 0;
   }
 }
 
 .home-landing-heading {
-  @include h1-bold;
+  @include mixins.h1-bold;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include h3-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h3-bold;
   }
 }
 
 .home-landing-heading span {
-  @include h1-small-bold;
+  @include mixins.h1-small-bold;
 
-  @media (max-width: $screen-sm) {
-    @include h3-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h3-bold;
   }
 }
 
 .home-section-landing-image {
   display: none;
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     display: block;
     width: 100%;
   }
@@ -83,7 +83,7 @@ Home page layout.
   position: absolute;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-900;
+  border-bottom: 4px solid variables.$neutral-900;
 }
 
 .home-section-dark-container {
@@ -91,26 +91,26 @@ Home page layout.
 }
 
 .underline-alt::after {
-  border-bottom: 4px solid $neutral-50;
+  border-bottom: 4px solid variables.$neutral-50;
 }
 
 .donate-section-underline::after {
   padding-bottom: 18px;
-  border-bottom: 8px solid $neutral-50;
+  border-bottom: 8px solid variables.$neutral-50;
   width: 101px;
 }
 
 .home-section-paragraph {
-  @include subheading-regular;
+  @include mixins.subheading-regular;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include p3-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p3-regular;
   }
 }
 
 .home-section-paragraph-anchor {
-  color: $neutral-900;
+  color: variables.$neutral-900;
   font-weight: 700;
 }
 
@@ -121,7 +121,7 @@ Home page layout.
   justify-content: center;
   gap: 40px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     width: auto;
     padding: 48px 40px 0 40px;
     margin: auto;
@@ -135,7 +135,7 @@ Home page layout.
   align-items: center;
   padding: 192px 0 192px 80px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     padding: 0;
     flex-direction: column;
     align-items: flex-end;
@@ -152,7 +152,7 @@ Home page layout.
     background-size: 40% 80%;
   }
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     background-image: none;
   }
 }
@@ -161,13 +161,13 @@ Home page layout.
   display: none;
   margin-top: 40px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     display: block;
     height: 50vw;
     margin-bottom: 80px;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     display: block;
     height: 70vw;
     margin-bottom: 80px;
@@ -177,11 +177,11 @@ Home page layout.
 .home-services-container {
   padding: 0 80px 96px 80px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     padding: 0 20px 96px 20px;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 48px 40px;
   }
 }
@@ -193,7 +193,7 @@ Home page layout.
   justify-content: space-between;
   gap: 24px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
@@ -210,20 +210,20 @@ Home page layout.
 }
 
 .home-numbered-header {
-  @include h3-bold;
+  @include mixins.h3-bold;
   text-align: center;
   flex: 1;
   display: flex;
   align-items: center;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include h4-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h4-bold;
   }
 }
 
 .home-numbered-paragraph {
-  @include p3-regular;
+  @include mixins.p3-regular;
   text-align: center;
 }
 
@@ -250,7 +250,7 @@ Home page layout.
   justify-content: space-between;
   gap: 40px;
 
-  @media (max-width: $screen-xxl) {
+  @media (max-width: variables.$screen-xxl) {
     width: 100%;
   }
 }
@@ -266,7 +266,7 @@ Home page layout.
 }
 
 .slide-content p {
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     margin-bottom: 10px;
   }
 }
@@ -287,7 +287,7 @@ Home page layout.
   align-items: flex-start;
   gap: 40px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     padding: 64px 40px;
     align-items: center;
   }
@@ -298,7 +298,7 @@ Home page layout.
   position: absolute;
   height: 1px;
   width: 93px;
-  border-bottom: 8px solid $secondary-50;
+  border-bottom: 8px solid variables.$secondary-50;
   margin-bottom: 20px;
 }
 
@@ -311,7 +311,7 @@ Home page layout.
   justify-content: space-between;
   gap: 60px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     flex-direction: column;
     padding: 64px 40px;
   }
@@ -322,35 +322,35 @@ Home page layout.
   display: flex;
   flex-direction: column;
 
-  @media (max-width: $screen-xxl) {
+  @media (max-width: variables.$screen-xxl) {
     width: 100%;
   }
 }
 
 .heading-large-section-sub {
   margin: 10px 0;
-  @include h1-semi-bold;
+  @include mixins.h1-semi-bold;
 
-  @media (max-width: $screen-lg) {
-    @include h3-semi-bold;
+  @media (max-width: variables.$screen-lg) {
+    @include mixins.h3-semi-bold;
   }
 }
 
 .home-section-dark-paragraph {
-  @include subheading-medium-regular;
+  @include mixins.subheading-medium-regular;
   margin: 0 0 30px 0;
 
-  @media (max-width: $screen-lg) {
-    @include p3-regular;
+  @media (max-width: variables.$screen-lg) {
+    @include mixins.p3-regular;
   }
 }
 
 .home-section-dark-paragraph span {
-  @include subheading-medium-bold;
+  @include mixins.subheading-medium-bold;
   margin: 0 0 30px 0;
 
-  @media (max-width: $screen-lg) {
-    @include p3-bold;
+  @media (max-width: variables.$screen-lg) {
+    @include mixins.p3-bold;
   }
 }
 
@@ -362,7 +362,7 @@ Home page layout.
   align-content: flex-start;
   gap: 48px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     flex-direction: column;
     justify-content: center;
     padding: 0;
@@ -371,7 +371,7 @@ Home page layout.
 }
 
 .home-numbered-paragraph-partnerships {
-  @include p3-regular;
+  @include mixins.p3-regular;
   text-align: left;
   margin-top: 24px;
 }

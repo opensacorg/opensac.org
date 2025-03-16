@@ -1,22 +1,22 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /*
 conduct page layout
  */
 .conduct-light-theme {
-  color: $neutral-900;
-  background-color: $secondary-50;
+  color: variables.$neutral-900;
+  background-color: variables.$secondary-50;
 }
 
 .conduct-dark-theme {
-  color: $neutral-50;
-  background-color: $neutral-900;
+  color: variables.$neutral-50;
+  background-color: variables.$neutral-900;
 }
 
 .conduct-grey-theme {
-  color: $neutral-50;
-  background-color: $neutral-500;
+  color: variables.$neutral-50;
+  background-color: variables.$neutral-500;
 }
 
 .conduct-section-landing {
@@ -27,11 +27,11 @@ conduct page layout
   justify-content: center;
   gap: 24px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 96px 60px;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 48px 40px;
     flex-direction: column;
   }
@@ -50,7 +50,7 @@ conduct page layout
   justify-content: center;
   gap: 30px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 0 25px 48px 25px;
     gap: 24px;
   }
@@ -63,39 +63,39 @@ conduct page layout
   right: 0;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-900;
+  border-bottom: 4px solid variables.$neutral-900;
 }
 
 .underline-alt::after {
-  border-bottom: 4px solid $neutral-50;
+  border-bottom: 4px solid variables.$neutral-50;
 }
 
 .conduct-sub-h1-heading {
-  @include h1-small-semi-bold;
+  @include mixins.h1-small-semi-bold;
   margin: 12px 0;
 
-  @media (max-width: $screen-sm) {
-    @include h3-semi-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h3-semi-bold;
   }
 }
 
 .conduct-sub-heading {
-  @include subheading-bold;
+  @include mixins.subheading-bold;
   margin: 10px 0;
   width: 100%;
   text-align: left;
 
-  @media (max-width: $screen-sm) {
-    @include p2-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-bold;
   }
 }
 
 .conduct-section-paragraph {
-  @include p3-regular;
+  @include mixins.p3-regular;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
 
@@ -108,7 +108,7 @@ conduct page layout
   gap: 30px;
   width: 100%;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     gap: 16px;
     padding: 0;
     align-items: flex-start;
@@ -123,17 +123,17 @@ conduct page layout
 }
 
 .conduct-item-paragraph {
-  @include subheading-regular;
+  @include mixins.subheading-regular;
   margin: 0;
   width: 100%;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
 
 .conduct-paragraph-anchor {
-  color: $neutral-50;
+  color: variables.$neutral-50;
 }
 
 // Policies
@@ -146,7 +146,7 @@ conduct page layout
   justify-content: center;
   gap: 24px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 48px 40px 0 40px;
   }
 }
@@ -159,7 +159,7 @@ conduct page layout
   justify-content: center;
   gap: 30px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 48px 40px;
     gap: 40px;
   }
@@ -169,7 +169,7 @@ conduct page layout
 .conduct-email-header-container {
   padding: 48px 80px 24px 80px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 48px 25px 0 25px;
   }
 }
@@ -180,7 +180,7 @@ conduct page layout
   gap: 10px;
   padding: 20px 80px 40px 80px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 32px 25px 48px 25px;
   }
 }
