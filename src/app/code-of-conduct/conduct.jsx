@@ -8,7 +8,7 @@ import ConductSectionEmail from './conductSectionEmail'
  * @type {{light: string, dark: string}}
  */
 export const SectionType = {
-  light: 'light', 
+  light: 'light',
   dark: 'dark',
   grey: 'grey',
 }
@@ -16,10 +16,10 @@ export const SectionType = {
 export default function Conduct() {
   return (
     <div className="">
-      <ConductSectionLanding sectionType={SectionType.light}/>
-      <ConductSectionBullets sectionType={SectionType.dark}/>
-      <ConductSectionPolicies sectionType={SectionType.light}/>
-      <ConductSectionEmail sectionType={SectionType.grey}/>
+      <ConductSectionLanding sectionType={SectionType.light} />
+      <ConductSectionBullets sectionType={SectionType.dark} />
+      <ConductSectionPolicies sectionType={SectionType.light} />
+      <ConductSectionEmail sectionType={SectionType.grey} />
     </div>
   )
 }

@@ -1,17 +1,20 @@
-@use "../abstracts/variables";
+@use '../abstracts/variables';
 
-@mixin button-transition ($background, $text){
-  transition: background-color 0.3s, color 0.3s;
+@mixin button-transition($background, $text) {
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 
   &:hover {
     background-color: $background;
     color: $text;
   }
-
 }
 
 @mixin dark-button-transition {
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 
   &:hover {
     background-color: variables.$secondary-500;
@@ -23,8 +26,13 @@
   position: relative;
 
   &::before {
-    content: "";
-    transition: top, right, bottom, left, 0.3s ease-in-out;
+    content: '';
+    transition:
+      top,
+      right,
+      bottom,
+      left,
+      0.3s ease-in-out;
     position: absolute;
     top: 0;
     right: 0;
@@ -44,7 +52,9 @@
 }
 
 @mixin nav-link-hover-transition {
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 
   &:hover {
     background-color: variables.$secondary-500;
@@ -53,17 +63,17 @@
 }
 
 @mixin nav-link-underline-transition {
-  animation: navLinkUnderlineSlide .4 linear forwards;
+  animation: navLinkUnderlineSlide 0.4 linear forwards;
 
   @keyframes navLinkUnderlineSlide {
     0% {
       left: -100%;
-      height: .5rem;
+      height: 0.5rem;
     }
 
     50% {
       left: 0;
-      height: .5rem;
+      height: 0.5rem;
     }
 
     100% {

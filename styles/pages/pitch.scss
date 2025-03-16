@@ -1,10 +1,9 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 /*
 Pitch page layout.
  */
-
 
 .pitch-instructions-container {
   display: flex;
@@ -19,7 +18,7 @@ Pitch page layout.
 }
 
 .pitch-dark-heading-container::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;

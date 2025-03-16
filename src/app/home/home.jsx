@@ -12,7 +12,7 @@ import HomeSectionPartnership from './homeSectionPartnerships'
  * @type {{light: string, dark: string}}
  */
 export const SectionType = {
-  light: 'light', 
+  light: 'light',
   dark: 'dark',
   grey: 'grey',
 }
@@ -24,13 +24,14 @@ export const SectionType = {
 export default function Home() {
   return (
     <div className="">
-      <HomeSectionLandingImage sectionType={SectionType.dark}/>
-      <HomeSectionDefault2 sectionType={SectionType.light}/>
-      <HomeSectionAboutImage sectionType={SectionType.dark}/>
-      <HomeSectionServices sectionType={SectionType.dark}/>
-      <HomeSectionDefault sectionType={SectionType.light}/>
-      <HomeSectionProjects sectionType={SectionType.dark}/>
-      <HomeSectionPartnership sectionType={SectionType.grey}/>
-      <HomeSectionDonate sectionType={SectionType.dark}/>
-    </div>)
+      <HomeSectionLandingImage sectionType={SectionType.dark} />
+      <HomeSectionDefault2 sectionType={SectionType.light} />
+      <HomeSectionAboutImage sectionType={SectionType.dark} />
+      <HomeSectionServices sectionType={SectionType.dark} />
+      <HomeSectionDefault sectionType={SectionType.light} />
+      <HomeSectionProjects sectionType={SectionType.dark} />
+      <HomeSectionPartnership sectionType={SectionType.grey} />
+      <HomeSectionDonate sectionType={SectionType.dark} />
+    </div>
+  )
 }

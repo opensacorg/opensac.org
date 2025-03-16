@@ -1,5 +1,5 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 /*
 Get Started page layout
@@ -10,7 +10,7 @@ Get Started page layout
 }
 
 .dark-heading-container::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;

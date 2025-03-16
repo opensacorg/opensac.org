@@ -55,7 +55,7 @@ Data files from the old website codeforsac.org.
   headshot: dan_fey.jpg
   bio: Dan is a back end software engineer with experiences in application development, distributed systems, and databases.  He has been involved with Open Sacramento since January 2018.  Dan loves working with others on open source projects to help the community.
   email: dan@opensac.org
-  twitter: 
+  twitter:
   linkedin: https://www.linkedin.com/in/feydan/
 
 - name: Mary Fey Norris
@@ -71,15 +71,15 @@ Data files from the old website codeforsac.org.
   headshot: walter_yu.png
   bio: Walter is a civil engineer with experience in data science, GIS and web application development. He joined Open Sacramento in 2018 and enjoys working on open source software projects.
   email: kharma@gmail.com
-  twitter: 
+  twitter:
   linkedin: https://www.linkedin.com/in/realwalteryu/
-  
+
 - name: Brianda Hernandez
   title: Director of Marketing & Engagement
   headshot: brianda_hernandez.jpg
-  bio: Brianda is interested in giving a helping hand wherever and however it's needed. Because of this, she has worked in a diverse range of industries in and out of tech. Now, during the day, she volunteers with Open Sacramento helping with project management, marketing and engagement. 
+  bio: Brianda is interested in giving a helping hand wherever and however it's needed. Because of this, she has worked in a diverse range of industries in and out of tech. Now, during the day, she volunteers with Open Sacramento helping with project management, marketing and engagement.
   email: brianda7hernandez@gmail.com
-  twitter: 
+  twitter:
   linkedin: https://www.linkedin.com/in/createhernandez/
 
 - name: Nate Bass
@@ -96,6 +96,6 @@ Data files from the old website codeforsac.org.
 ```yaml
 # Bitly links used by application.
 # See: https://bitly.com
-- shortlink: "bit.ly/asdf"
-  name: "contact"
+- shortlink: 'bit.ly/asdf'
+  name: 'contact'
 ```

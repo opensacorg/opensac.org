@@ -14,13 +14,11 @@ export default function DonateSectionLanding({ sectionType }) {
         </h2>
       </div>
 
-      
-
       <div className={`general-section-${sectionType}-container`}>
         <p className={`contact-section-paragraph`}>
           <span className={`paragraph-bold`}>
             Choose the option that suits you best.
-          </span>{" "}
+          </span>{' '}
           Make a one-time donation to support our mission instantly
           {/*, or become a sustaining supporter by selecting the monthly donation option*/}
           . Your tax-deductable donation fuels innovaction, empowers civic
@@ -37,5 +35,5 @@ export default function DonateSectionLanding({ sectionType }) {
         ></stripe-buy-button>
       </div>
     </section>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 /**
  * Default application footer.
@@ -13,14 +13,14 @@ export default function AppFooter() {
           <p className="footerMessageParagraph">
             Open Sacramento is a tax-deductible civic-tech community dedicated
             to using technology and open data for positive civic change in
-            Sacramento. Open Sacramento is fiscally sponsored by{" "}
+            Sacramento. Open Sacramento is fiscally sponsored by{' '}
             <Link href="https://www.dbaarts.org/">DBA Arts</Link>.
           </p>
         </div>
 
         <div className="footerActionLinks">
           <p className="footerActionLinksItem">
-            Join us for our weekly meetings on{" "}
+            Join us for our weekly meetings on{' '}
             <Link
               className="footerActionLinksAnchor"
               href="https://www.meetup.com/code4sac/"
@@ -33,14 +33,14 @@ export default function AppFooter() {
             .
           </p>
           <p className="footerActionLinksItem">
-            See our{" "}
+            See our{' '}
             <Link href="/projects" className="footerActionLinksAnchor">
               projects
             </Link>
             .
           </p>
           <p className="footerActionLinksItem">
-            For any questions, visit our{" "}
+            For any questions, visit our{' '}
             <Link href="/faq" className="footerActionLinksAnchor">
               FAQs
             </Link>
@@ -103,5 +103,5 @@ export default function AppFooter() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

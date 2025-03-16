@@ -14,10 +14,10 @@ export default function NameChangeSectionLanding({ sectionType }) {
 
       <div className={`general-section-${sectionType}-container`}>
         <p className={`contact-section-paragraph`}>
-          We're thrilled to announce that{" "}
+          We're thrilled to announce that{' '}
           <span className={`paragraph-bold`}>
             Code for Sacramento is now Open Sacramento!
-          </span>{" "}
+          </span>{' '}
           While our name has changed, we're still the same passionate,
           volunteer-driven community of technologists, developers, designers,
           and civic-minded individuals dedicated to improving public services
@@ -25,11 +25,11 @@ export default function NameChangeSectionLanding({ sectionType }) {
         </p>
         <br />
         <p className={`contact-section-paragraph`}>
-          This rebrand comes in response to the{" "}
+          This rebrand comes in response to the{' '}
           <a href="https://codeforamerica.org/news/reflections-on-the-brigade-networks-next-chapter/">
             end of Code for America's Brigade program
           </a>
-          , but it's also a reflection of who we've become.{" "}
+          , but it's also a reflection of who we've become.{' '}
           <span className={`paragraph-bold`}>Open Sacramento</span> better
           captures the incredible diversity of talents within our community.
           Yes, coding is still a big part of what we do, but our impact
@@ -47,12 +47,12 @@ export default function NameChangeSectionLanding({ sectionType }) {
           makes us special, and that's why we believe this new name truly
           represents the heart of our mission. We're more excited than ever to
           continue this journey and invite you to be part of it! Let's keep
-          making Sacramento better—together, under our new banner:{" "}
-          <span className={`paragraph-bold`}>Open Sacramento</span>! Get started{" "}
+          making Sacramento better—together, under our new banner:{' '}
+          <span className={`paragraph-bold`}>Open Sacramento</span>! Get started{' '}
           <a href="https://opensac.org/get-started">here</a>.
         </p>
         <br />
       </div>
     </section>
-  );
+  )
 }

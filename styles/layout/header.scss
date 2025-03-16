@@ -1,5 +1,5 @@
-@use "../abstracts/mixins";
-@use "../abstracts/variables";
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
 
 .general-heading-section {
   color: variables.$neutral-300;
@@ -54,7 +54,7 @@
 }
 
 .heading-underline::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;

@@ -2,7 +2,7 @@
  * About collage section.
  * @returns {JSX.Element}
  */
-export default function AboutSectionCollage({sectionType}) {
+export default function AboutSectionCollage({ sectionType }) {
   return (
     <section className={`about-${sectionType}-section`}>
       <div className={`about-grid-container`}>
@@ -11,11 +11,7 @@ export default function AboutSectionCollage({sectionType}) {
           alt="Tower bridge"
           className={`full-width-item`}
         />
-        <img
-          src="/img/about/tablet.png"
-          alt="Tablet"
-          className={`grid-item`}
-        />
+        <img src="/img/about/tablet.png" alt="Tablet" className={`grid-item`} />
         <img
           src="/img/about/meeting.png"
           alt="Meeting"
