@@ -18,6 +18,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  transpilePackages: ['next-mdx-remote'],
 }
 
 module.exports = withMDX(nextConfig)
