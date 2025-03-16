@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Link from 'next/link'
 
 /**
@@ -13,11 +13,11 @@ const ExtendedNavbarMenu = (visible) => {
   const [mobileNavPosition, toggleMobileNavPosition] = useState(false)
 
   return (
-    <div className="dropdown-menu" style={visible ? {} : { display: 'none' }}>
+    <div className="dropdown-menu" style={visible ? {} : {display: 'none'}}>
       <div className={'navbar-extended-mobile-container'}>
         <div
           className={`navbar-extended-mobile-content`}
-          style={mobileNavPosition ? { display: 'none' } : {}}
+          style={mobileNavPosition ? {display: 'none'} : {}}
         >
           <Link className={'mobile-nav-link'} href="/">
             Home
@@ -28,7 +28,7 @@ const ExtendedNavbarMenu = (visible) => {
           <Link className={'mobile-nav-link'} href="/contact">
             Contact
           </Link>
-          <Link className={'mobile-nav-link'} href="#">
+          <Link className={'mobile-nav-link'} href="/donate">
             Donate
           </Link>
           <div>
@@ -42,7 +42,7 @@ const ExtendedNavbarMenu = (visible) => {
         </div>
         <div
           className={'navbar-extended-mobile-content'}
-          style={!mobileNavPosition ? { display: 'none' } : {}}
+          style={!mobileNavPosition ? {display: 'none'} : {}}
         >
           <Link className={'mobile-nav-link'} href="/get-started">
             Get Started

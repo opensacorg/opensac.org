@@ -6,7 +6,7 @@ export default function FaqSectionStart({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container heading-underline`}
+        className={`general-section-container heading-underline`}
       >
         <h1 className="general-heading-section">FAQ</h1>
         <h2 className="sub-heading faq-heading-section-sub">
@@ -14,7 +14,7 @@ export default function FaqSectionStart({ sectionType }) {
         </h2>
       </div>
 
-      <div className={`general-section-${sectionType}-container`}>
+      <div className={`general-section-container`}>
         <p className="section-paragraph-small">
           Welcome to our FAQ page, designed to provide you with quick and
           informative answers to commonly asked questions about Open Sacramento.

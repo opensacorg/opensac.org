@@ -1,4 +1,3 @@
-import LandingSection from '@/components/ui/LandingSection'
 import HeaderUnderline from '@/components/content/HeaderUnderline'
 import instructionData from './instructions.json'
 import SidebarSection from '@/components/ui/SidebarSection'
@@ -20,20 +19,20 @@ export const SectionType = {
 export default function PitchPage() {
   return (
     <div className="">
-      <LandingSection sectionType={SectionType.light}>
+      <section className={`general-section-${SectionType.light}`}>
         <HeaderUnderline
           sectionType={SectionType.light}
           title="Pitch a project"
           description="Contribute Your Project Idea"
           large={true}
-          className={'split-section-content-container'}
+          className={'general-section-container'}
         />
-        <div className={`section-${SectionType.light} section-paragraph-small`}>
+        <div className={`general-section-container section-paragraph-small`}>
           Share your innovative ideas and collaborate with our community to turn
           them into reality. Pitch your project to make a positive impact on
           Sacramento using technology and civic engagement.
         </div>
-      </LandingSection>
+      </section>
       <SidebarSection sectionType={SectionType.dark}>
         <div className={`sidebar-info-container`}>
           <HeaderUnderline

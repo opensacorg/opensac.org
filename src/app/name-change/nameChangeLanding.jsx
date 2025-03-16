@@ -6,13 +6,13 @@ export default function NameChangeSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container heading-underline`}
+        className={`general-section-container heading-underline`}
       >
         <h1 className={`general-heading-section`}>Introducing</h1>
         <h2 className={`contact-sub-heading`}>Open Sacramento!</h2>
       </div>
 
-      <div className={`general-section-${sectionType}-container`}>
+      <div className={`general-section-container`}>
         <p className={`section-paragraph-small`}>
           We're thrilled to announce that{' '}
           <span className={`paragraph-bold`}>

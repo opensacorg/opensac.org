@@ -39,3 +39,50 @@
     @include mixins.p2-regular;
   }
 }
+
+// Refactor this to use general section container class without light prefix. Dark is used but not defined.
+.general-section-container {
+  width: 50%;
+  position: relative;
+
+  @media (max-width: variables.$screen-md) {
+    width: 100%;
+  }
+}
+
+.section-container2 {
+  padding: 64px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  @media (max-width: variables.$screen-lg) {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 8vw 4vw;
+  }
+}
+
+.split-section-container {
+  padding: 96px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  @media (max-width: variables.$screen-md) {
+    padding: 48px 40px;
+    flex-direction: column;
+  }
+}
+
+.split-section-content-container {
+  @media (max-width: variables.$screen-md) {
+    width: 100%;
+  }
+}

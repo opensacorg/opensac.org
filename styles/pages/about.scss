@@ -333,11 +333,6 @@ About page layout.
   }
 }
 
-.positions-header {
-  @include mixins.h5-semi-bold;
-  color: variables.$secondary-50;
-}
-
 .positions-list {
   border-top: 1px variables.$neutral-400 solid;
 }

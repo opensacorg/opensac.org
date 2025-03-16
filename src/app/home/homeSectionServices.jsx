@@ -10,7 +10,7 @@ export default function HomeSectionServices({ sectionType }) {
       className={`general-section-${sectionType} home-services-container`}
     >
       <div
-        className={`general-section-${sectionType}-container heading-underline underline-alt`}
+        className={`general-section-container heading-underline underline-alt`}
       >
         <h1 className={`general-heading-section general-heading-section-alt`}>
           Our services

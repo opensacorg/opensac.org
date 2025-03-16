@@ -8,7 +8,7 @@ export default function HomeSectionDonate({ sectionType }) {
   return (
     <section className={`general-section-${sectionType} donate-section`}>
       <div
-        className={`general-section-${sectionType}-container heading-underline donate-section-underline md:container md:mx-auto`}
+        className={`general-section-container heading-underline donate-section-underline`}
       >
         <h1 className={`heading-large-section-sub`}>
           Help Support Open Sacramento

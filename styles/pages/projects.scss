@@ -129,7 +129,7 @@ Projects page layout.
 }
 
 .project-search-section {
-  padding: 0px 24px 32px 24px;
+  padding: 0 24px 32px 24px;
 
   .project-search-form {
     display: grid;
@@ -218,7 +218,7 @@ Projects page layout.
   }
 
   @media (min-width: variables.$screen-lg) {
-    padding: 0px 80px 40px 80px;
+    padding: 0 80px 40px 80px;
 
     .project-search-form {
       grid-template-columns: 3fr 2fr;
@@ -400,7 +400,7 @@ details p {
   display: flex;
   flex-direction: column;
   color: variables.$neutral-900;
-  padding: 0px;
+  padding: 0;
   min-width: 300px;
 }
 

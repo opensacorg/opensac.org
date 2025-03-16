@@ -6,7 +6,7 @@ export default function HomeSectionDefault2({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container heading-underline`}
+        className={`general-section-container heading-underline`}
       >
         <h1 className={`general-heading-section`}>Who we are</h1>
         <h2 className={`sub-heading`}>
@@ -14,7 +14,7 @@ export default function HomeSectionDefault2({ sectionType }) {
         </h2>
       </div>
 
-      <div className={`general-section-${sectionType}-container`}>
+      <div className={`general-section-container`}>
         <p className={`section-paragraph`}>
           Open Sacramento is
           <span className={`paragraph-bold`}>

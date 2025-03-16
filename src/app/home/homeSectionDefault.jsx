@@ -8,7 +8,7 @@ export default function HomeSectionDefault({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
       <div
-        className={`general-section-${sectionType}-container heading-underline`}
+        className={`general-section-container heading-underline`}
       >
         <h1 className={`general-heading-section`}>Why volunteer</h1>
         <h2 className={`sub-heading`}>
@@ -17,7 +17,7 @@ export default function HomeSectionDefault({ sectionType }) {
         </h2>
       </div>
 
-      <div className={`general-section-${sectionType}-container`}>
+      <div className={`general-section-container`}>
         <p className={`section-paragraph`}>
           <span className={`paragraph-bold`}>Ready to make a difference? </span>
           Join us at Open Sacramento and use your skills to drive positive
