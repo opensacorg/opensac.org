@@ -1,7 +1,8 @@
 @use '../abstracts/variables';
 
 .project-screenshots-slider-container {
-  .project-screenshot, .project-blank-screenshot {
+  .project-screenshot,
+  .project-blank-screenshot {
     border: 1px solid variables.$neutral-700;
     border-radius: 8px;
   }

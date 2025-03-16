@@ -1,4 +1,4 @@
-import {githubOwner, githubProject} from '@/constants'
+import { githubOwner, githubProject } from '@/constants'
 import * as yaml from 'yaml'
 
 /**
@@ -45,9 +45,9 @@ export const fetchGithubSingleProject = async (ghResponse) => {
   const meta = await fetchMetaFile(ghData.full_name, ghData.default_branch)
   return meta
     ? {
-      ...ghData,
-      meta,
-    }
+        ...ghData,
+        meta,
+      }
     : null
 }
 

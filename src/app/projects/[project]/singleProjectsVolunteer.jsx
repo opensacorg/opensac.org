@@ -5,7 +5,8 @@ import Link from 'next/link'
  * @returns {JSX.Element}
  */
 export default function SingleProjectsVolunteer() {
-  return (<section id="how-to-volunteer" className={`project-volunteer-container`}>
+  return (
+    <section id="how-to-volunteer" className={`project-volunteer-container`}>
       <div className={`project-volunteer-info-container`}>
         <p className={`project-type`}>Volunteer</p>
         <div className={`project-main-heading-container heading-underline`}>
@@ -21,12 +22,13 @@ export default function SingleProjectsVolunteer() {
         </p>
       </div>
       <div className={`get-started-bottom`}>
-        <img src="/img/about/rectangle.png" alt="rectangle"/>
+        <img src="/img/about/rectangle.png" alt="rectangle" />
         <p className={`opportunities-anchor-bottom`}>
           Not a volunteer yet?
-          <br/>
+          <br />
           <Link href="/get-started">Get Started</Link>
         </p>
       </div>
-    </section>)
+    </section>
+  )
 }

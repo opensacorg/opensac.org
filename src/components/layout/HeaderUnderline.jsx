@@ -1,4 +1,4 @@
-import { SectionType } from '@/app/home/home'
+import { SectionType } from '../../app/home/home'
 
 /**
  * Header with underline styling.

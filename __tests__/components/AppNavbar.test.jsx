@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import AppNavbar from '@/components/app/AppNavbar'
+import AppNavbar from 'src/components/layout/AppNavbar'
 
 render(<AppNavbar />)
 

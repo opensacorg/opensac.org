@@ -5,9 +5,7 @@
 export default function DonateSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
-      <div
-        className={`general-section-container heading-underline`}
-      >
+      <div className={`general-section-container heading-underline`}>
         <h1 className={`general-heading-section`}>Donate</h1>
         <h2 className={`contact-sub-heading`}>
           Support<br></br> Our Mission

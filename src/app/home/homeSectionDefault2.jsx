@@ -5,9 +5,7 @@
 export default function HomeSectionDefault2({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
-      <div
-        className={`general-section-container heading-underline`}
-      >
+      <div className={`general-section-container heading-underline`}>
         <h1 className={`general-heading-section`}>Who we are</h1>
         <h2 className={`sub-heading`}>
           Building a Brighter Sacramento Through Innovation and Technology

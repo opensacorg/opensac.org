@@ -5,9 +5,7 @@
 export default function NameChangeSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
-      <div
-        className={`general-section-container heading-underline`}
-      >
+      <div className={`general-section-container heading-underline`}>
         <h1 className={`general-heading-section`}>Introducing</h1>
         <h2 className={`contact-sub-heading`}>Open Sacramento!</h2>
       </div>

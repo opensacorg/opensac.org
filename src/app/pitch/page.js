@@ -1,7 +1,7 @@
-import HeaderUnderline from '@/components/content/HeaderUnderline'
+import HeaderUnderline from '../../components/layout/HeaderUnderline'
 import instructionData from './instructions.json'
-import SidebarSection from '@/components/ui/SidebarSection'
-import Steps from '@/components/content/Steps'
+import SidebarSection from '../../components/layout/SidebarSection'
+import Steps from '../../components/ui/Steps'
 
 /**
  * Section type. Displays light or dark themes.

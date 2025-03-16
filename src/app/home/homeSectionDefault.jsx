@@ -7,9 +7,7 @@ import Link from 'next/link'
 export default function HomeSectionDefault({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
-      <div
-        className={`general-section-container heading-underline`}
-      >
+      <div className={`general-section-container heading-underline`}>
         <h1 className={`general-heading-section`}>Why volunteer</h1>
         <h2 className={`sub-heading`}>
           Empower Change with <br />

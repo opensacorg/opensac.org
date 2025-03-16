@@ -1,4 +1,4 @@
-import Button from '@/components/Buttons'
+import Button from 'src/components/ui/buttons'
 
 /**
  * Home services section.
