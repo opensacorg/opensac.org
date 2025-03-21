@@ -39,10 +39,17 @@
   }
 }
 
+.heading-paragraph-color {
+  color: variables.$neutral-900;
+}
+
+.heading-paragraph-color-dark {
+  color: variables.$neutral-50;
+}
+
 .heading-paragraph-large {
   @include mixins.subheading-regular;
   margin: 0;
-  color: variables.$neutral-50;
 
   @media (max-width: variables.$screen-sm) {
     @include mixins.p2-regular;

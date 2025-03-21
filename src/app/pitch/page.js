@@ -2,6 +2,7 @@ import HeaderUnderline from '../../components/layout/HeaderUnderline'
 import instructionData from './instructions.json'
 import SidebarSection from '../../components/layout/SidebarSection'
 import Steps from '../../components/ui/Steps'
+import AppLayout from '@/components/layout/AppLayout'
 
 /**
  * Section type. Displays light or dark themes.
@@ -18,7 +19,7 @@ export const SectionType = {
  */
 export default function PitchPage() {
   return (
-    <div className="">
+    <AppLayout>
       <section className={`general-section-${SectionType.light}`}>
         <HeaderUnderline
           sectionType={SectionType.light}
@@ -46,6 +47,6 @@ export default function PitchPage() {
         </div>
         <Steps sectionType={SectionType.dark} steps={instructionData}></Steps>
       </SidebarSection>
-    </div>
+    </AppLayout>
   )
 }

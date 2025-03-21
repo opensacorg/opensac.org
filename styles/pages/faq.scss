@@ -96,6 +96,7 @@ details h4 {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
 }
 
@@ -110,7 +111,7 @@ details h4::after {
   background-position: center;
   height: 44px;
   width: 44px;
-  margin: 10px auto;
+  margin: 10px 0 10px auto;
 }
 
 .faq-question.question-open a::after,
