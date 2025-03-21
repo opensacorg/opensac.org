@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /*
 About page layout.
@@ -11,27 +11,27 @@ About page layout.
   right: 0;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-900;
+  border-bottom: 4px solid variables.$neutral-900;
 }
 
 .about-underline-alt::after {
-  border-bottom: 4px solid $neutral-50;
+  border-bottom: 4px solid variables.$neutral-50;
 }
 
 .about-section-paragraph {
-  @include subheading-regular;
+  @include mixins.subheading-regular;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include p3-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p3-regular;
   }
 }
 
 .about-light-section {
   padding: 7%;
-  background-color: $secondary-50;
+  background-color: variables.$secondary-50;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 16px;
   }
 }
@@ -57,8 +57,8 @@ About page layout.
 
 .about-team-section {
   padding: 0 0 64px 0;
-  background-color: $secondary-50;
-  color: $neutral-900;
+  background-color: variables.$secondary-50;
+  color: variables.$neutral-900;
 }
 
 .team-paragraph-container {
@@ -67,7 +67,7 @@ About page layout.
   flex-direction: column;
   gap: 40px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 64px 40px;
     gap: 12px;
   }
@@ -76,7 +76,7 @@ About page layout.
 .about-heading-container {
   position: relative;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: 100%;
   }
 }
@@ -100,7 +100,7 @@ About page layout.
     background-size: 40% 80%;
   }
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     background-image: none;
     padding: 0;
     flex-direction: column;
@@ -115,7 +115,7 @@ About page layout.
   justify-content: center;
   gap: 40px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     width: auto;
     padding: 48px 40px 0 40px;
     margin: auto;
@@ -126,13 +126,13 @@ About page layout.
   display: none;
   margin-top: 40px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     display: block;
     height: 50vw;
     margin-bottom: 80px;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     display: block;
     height: 70vw;
     margin-bottom: 80px;
@@ -142,7 +142,7 @@ About page layout.
 .team-paragraph {
   width: 65%;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: 100%;
   }
 }
@@ -150,11 +150,11 @@ About page layout.
 .team-members-container {
   padding: 0 80px;
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     padding: 0 24px;
   }
 
-  @media (max-width: $screen-xs) {
+  @media (max-width: variables.$screen-xs) {
     padding: 0;
   }
 }
@@ -164,7 +164,7 @@ About page layout.
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 10px;
 
-  @media (max-width: $screen-xxl) {
+  @media (max-width: variables.$screen-xxl) {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
 }
@@ -220,11 +220,11 @@ About page layout.
 }
 
 .about-sub-heading {
-  @include h1-semi-bold;
+  @include mixins.h1-semi-bold;
   margin: 10px 0;
 
-  @media (max-width: $screen-sm) {
-    @include h1-small-semi-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h1-small-semi-bold;
   }
 }
 
@@ -236,12 +236,12 @@ About page layout.
   padding: 64px 80px;
   gap: 24px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 48px 40px;
     gap: 40px;
   }
 
-  @media (max-width: $screen-xs) {
+  @media (max-width: variables.$screen-xs) {
     padding: 48px 20px;
   }
 }
@@ -250,7 +250,7 @@ About page layout.
   display: grid;
   grid-template-columns: 2fr 1fr;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     display: block;
   }
 }
@@ -262,31 +262,31 @@ About page layout.
   gap: 40px;
   margin-right: 15%;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     margin-right: 0;
   }
 }
 
 .opportunities-intro-paragraph {
-  @include p3-regular;
+  @include mixins.p3-regular;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
 
 .opportunities-intro-paragraph span {
   font-weight: 700;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
     font-weight: 700;
   }
 }
 
 .opportunities-anchor {
-  @include h3-bold;
+  @include mixins.h3-bold;
   color: black;
   width: 85%;
   position: absolute;
@@ -294,13 +294,13 @@ About page layout.
   left: 55%;
   transform: translate(-50%, -50%);
 
-  @media (min-width: $screen-xxl) {
+  @media (min-width: variables.$screen-xxl) {
     width: 12em;
   }
 }
 
 .opportunities-anchor a {
-  color: $primary-500;
+  color: variables.$primary-500;
 }
 
 .opportunities-get-started {
@@ -310,7 +310,7 @@ About page layout.
   background-size: contain;
   background-position: center;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     display: none;
   }
 }
@@ -321,11 +321,11 @@ About page layout.
 
 .positions-heading {
   display: block;
-  @include h3-bold;
-  color: $secondary-500;
+  @include mixins.h3-bold;
+  color: variables.$secondary-500;
   padding-top: 20px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     display: none;
   }
 }
@@ -337,7 +337,7 @@ About page layout.
   flex-wrap: wrap;
   width: 100%;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     gap: 47px;
   }
 }
@@ -346,28 +346,28 @@ About page layout.
   width: 48%;
   min-width: 400px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     width: 100%;
   }
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     min-width: 0;
   }
 }
 
 .positions-header {
-  @include h5-semi-bold;
-  color: $secondary-50;
+  @include mixins.h5-semi-bold;
+  color: variables.$secondary-50;
 }
 
 .positions-list {
-  border-top: 1px $neutral-400 solid;
+  border-top: 1px variables.$neutral-400 solid;
 }
 
 .position {
-  @include subheading-bold;
+  @include mixins.subheading-bold;
   font-weight: 600;
-  color: $neutral-200;
+  color: variables.$neutral-200;
 }
 
 .get-started-bottom {
@@ -378,11 +378,11 @@ About page layout.
   background-position: center;
   margin: auto;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: variables.$screen-lg) {
     display: none;
   }
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     width: 100%;
   }
 }
@@ -393,7 +393,7 @@ About page layout.
 }
 
 .opportunities-anchor-bottom {
-  @include h3-bold;
+  @include mixins.h3-bold;
   color: black;
   width: 80%;
   position: absolute;
@@ -401,16 +401,16 @@ About page layout.
   left: 55%;
   transform: translate(-50%, -50%);
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     font-size: 1.7em;
     line-height: 1.2em;
   }
 
-  @media (max-width: $screen-xs) {
+  @media (max-width: variables.$screen-xs) {
     font-size: 1.2em;
   }
 }
 
 .opportunities-anchor-bottom a {
-  color: $primary-500;
+  color: variables.$primary-500;
 }

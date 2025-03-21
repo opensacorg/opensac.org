@@ -1,6 +1,6 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
-@import "../base/animations.scss";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/animations.scss";
 
 /*
 Navigation bar.
@@ -12,18 +12,18 @@ It is made up of three sections.
 
 // Background behind the navbar. It requires the navbar to be transparent and offset page content. By default, this is not shown; it is overridden by the navbar-toolbar background color. 
 .navbar-background {
-  background: $landing-background-color;
+  background: variables.$landing-background-color;
 
   // Add margin to first element after navbar. This offsets the page content.
   + * {
-    margin-top: $toolbar-height;
+    margin-top: variables.$toolbar-height;
   }
 }
 
 .navbar-toolbar {
-  @include h5-semi-bold;
+  @include mixins.h5-semi-bold;
   width: 100%;
-  height: $toolbar-height;
+  height: variables.$toolbar-height;
   position: fixed;
   top: 0;
   margin: 0;
@@ -31,14 +31,14 @@ It is made up of three sections.
   z-index: 4;
   display: flex;
   flex-wrap: wrap;
-  color: $secondary-50;
-  background: $navbar-color;
-  box-shadow: 0 4px 4px 0 rgba($navbar-color, 0.25);
+  color: variables.$secondary-50;
+  background: variables.$navbar-color;
+  box-shadow: 0 4px 4px 0 rgba(variables.$navbar-color, 0.25);
 
   a,
   .navbar-toolbar a:visited,
   .navbar-toolbar a:link {
-    color: $secondary-50;
+    color: variables.$secondary-50;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -94,7 +94,7 @@ It is made up of three sections.
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: variables.$screen-lg) {
     display: inline-flex;
   }
 }
@@ -121,7 +121,7 @@ It is made up of three sections.
   height: 2px;
   width: 80px;
   margin: 0;
-  background: $secondary-50;
+  background: variables.$secondary-50;
   border: none;
   transition: .3s ease-in-out;
   float: left;
@@ -129,7 +129,7 @@ It is made up of three sections.
 
 .navbar-right-container {
   display: inline-flex;
-  height: $toolbar-height;
+  height: variables.$toolbar-height;
   padding: 10px 16px;
 }
 
@@ -140,7 +140,7 @@ It is made up of three sections.
   align-items: center;
   background: url("/img/navbar/menu_hamburger_light.svg") no-repeat center right;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: variables.$screen-lg) {
     background: transparent;
   }
 }
@@ -159,7 +159,7 @@ It is made up of three sections.
   background: transparent;
 
   button {
-    background-color: $navbar-color;
+    background-color: variables.$navbar-color;
   }
 }
 
@@ -169,7 +169,7 @@ It is made up of three sections.
   display: flex;
   flex-basis: 100%;
   justify-content: center;
-  box-shadow: 0 4px 4px 0 rgba($navbar-color, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(variables.$navbar-color, 0.25);
 }
 
 .navbar-extended-parent-link {
@@ -182,7 +182,7 @@ It is made up of three sections.
   a:visited,
   a:link,
   a:active {
-    color: $secondary-500;
+    color: variables.$secondary-500;
   }
 }
 
@@ -195,18 +195,18 @@ It is made up of three sections.
     background: url("/img/navbar/menu_x.png") no-repeat center right;
   }
 
-  @media screen and (min-width: $screen-lg) {
-    background: $secondary-50;
-    color: $neutral-900;
+  @media screen and (min-width: variables.$screen-lg) {
+    background: variables.$secondary-50;
+    color: variables.$neutral-900;
     .navbar-right-section {
       background: inherit;
     }
   }
 }
 
-@media screen and (min-width: $screen-lg) {
+@media screen and (min-width: variables.$screen-lg) {
   .navbar-toolbar-extended {
-    background-color: $secondary-50;
+    background-color: variables.$secondary-50;
     border-color: #ebeae5;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -221,12 +221,12 @@ It is made up of three sections.
   .navbar-toggle-extend-button {
     background: transparent url("/img/navbar/chevron_down.png") no-repeat center right;
     padding: 0 20px 0 0;
-    color: $secondary-500;
+    color: variables.$secondary-500;
   }
 
   .navbar-toggle-extend-button-extended {
     background: transparent url("/img/navbar/chevron_up.png") no-repeat center right;
     padding: 0 20px 0 0;
-    color: $neutral-900;
+    color: variables.$neutral-900;
   }
 }

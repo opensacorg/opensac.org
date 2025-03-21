@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /*
 Footer layout.
@@ -7,7 +7,7 @@ Footer layout.
 
 footer {
   height: fit-content;
-  background-color: $secondary-50;
+  background-color: variables.$secondary-50;
 }
 
 .footerContainerTop {
@@ -17,7 +17,7 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 40px;
     gap: 32px;
     flex-direction: column;
@@ -31,31 +31,31 @@ footer {
   width: 23%;
   gap: 16px;
 
-  @media (max-width: $screen-xl) {
+  @media (max-width: variables.$screen-xl) {
     padding: 0;
   }
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: 100%;
   }
 }
 
 .footerMessageHeader {
-  @include h2-semi-bold;
+  @include mixins.h2-semi-bold;
   margin: 0;
   padding: 10px 0;
 
-  @media (max-width: $screen-md) {
-    @include h3-semi-bold;
+  @media (max-width: variables.$screen-md) {
+    @include mixins.h3-semi-bold;
   }
 }
 
 .footerMessageParagraph {
-  @include p-footer;
+  @include mixins.p-footer;
   margin: 0;
   padding: 10px 0;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: 90%;
     padding: 0;
   }
@@ -69,23 +69,23 @@ footer {
   grid-template-rows: auto auto auto;
   gap: 30px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: 100%;
     padding: 0;
   }
 }
 
 .footerActionLinksItem {
-  @include p-footer;
+  @include mixins.p-footer;
   margin: 0;
 }
 
 .footerActionLinksAnchor {
   cursor: pointer;
   text-decoration: none;
-  color: $primary-900;
-  @include p-footer-bold;
-  border-bottom: 1px solid $primary-900;
+  color: variables.$primary-900;
+  @include mixins.p-footer-bold;
+  border-bottom: 1px solid variables.$primary-900;
 }
 
 .footerSocialMedia {
@@ -97,7 +97,7 @@ footer {
   padding: 10px 0;
   gap: 30px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: 100%;
     justify-content: flex-start;
     padding: 0;
@@ -106,7 +106,7 @@ footer {
 
 .footerSocialMediaLink {
   text-decoration: none;
-  color: $neutral-900;
+  color: variables.$neutral-900;
 }
 
 .footerSocialMediaIcon {
@@ -121,7 +121,7 @@ footer {
   justify-content: space-between;
   padding: 10px 80px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -130,12 +130,12 @@ footer {
 }
 
 .footerBottomTitle {
-  @include caption-footer;
+  @include mixins.caption-footer;
   margin: auto 0;
   order: 1;
-  color: $neutral-900;
+  color: variables.$neutral-900;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     order: 2;
   }
 }
@@ -148,13 +148,13 @@ footer {
   gap: 20px;
   order: 2;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     order: 1;
   }
 }
 
 .footerBottomLink {
-  @include caption-regular-uppercase;
+  @include mixins.caption-regular-uppercase;
   text-decoration: none;
   color: black;
 }

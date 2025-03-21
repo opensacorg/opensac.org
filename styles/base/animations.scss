@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables";
 
 @mixin button-transition ($background, $text){
   transition: background-color 0.3s, color 0.3s;
@@ -14,8 +14,8 @@
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: $secondary-500;
-    color: $neutral-700;
+    background-color: variables.$secondary-500;
+    color: variables.$neutral-700;
   }
 }
 
@@ -30,7 +30,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    border: $secondary-500 5px solid;
+    border: variables.$secondary-500 5px solid;
     border-radius: 6px;
   }
 
@@ -47,8 +47,8 @@
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: $secondary-500;
-    color: $neutral-900;
+    background-color: variables.$secondary-500;
+    color: variables.$neutral-900;
   }
 }
 

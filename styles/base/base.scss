@@ -1,0 +1,13 @@
+@use "../abstracts/variables";
+
+html,
+body {
+  background: variables.$navbar-color;
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}

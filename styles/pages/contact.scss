@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /*
 contact page layout
@@ -11,37 +11,37 @@ contact page layout
   right: 0;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-900;
+  border-bottom: 4px solid variables.$neutral-900;
 }
 
 .contact-sub-heading {
-  @include h1-semi-bold;
+  @include mixins.h1-semi-bold;
   margin: 10px 0;
 
-  @media (max-width: $screen-sm) {
-    @include h1-small-semi-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h1-small-semi-bold;
   }
 }
 
 .contact-underline-alt::after {
-  border-bottom: 4px solid $neutral-50;
+  border-bottom: 4px solid variables.$neutral-50;
 }
 
 .contact-section-paragraph {
-  @include subheading-regular;
+  @include mixins.subheading-regular;
   margin: 0;
 
-  @media (max-width: $screen-sm) {
-    @include p3-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p3-regular;
     max-width: 100%;
   }
 }
 
 .contact-light-section {
   padding: 7%;
-  background-color: $secondary-50;
+  background-color: variables.$secondary-50;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     padding: 16px;
   }
 }
@@ -49,7 +49,7 @@ contact page layout
 .contact-heading-container {
   position: relative;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: variables.$screen-md) {
     width: 100%;
   }
 }
@@ -63,13 +63,13 @@ contact page layout
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: $neutral-900;
+  background-color: variables.$neutral-900;
   // height: 80vh;
 
   .contact-mission-padding {
     padding: 80px;
 
-    @media (max-width: $screen-lg) {
+    @media (max-width: variables.$screen-lg) {
       padding: 40px;
     }
   }
@@ -78,7 +78,7 @@ contact page layout
     background-size: 40% 80%;
   }
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     flex-direction: column;
     align-items: flex-end;
   }
@@ -90,23 +90,23 @@ contact page layout
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  background-color: $neutral-900;
-  color: $neutral-50;
+  background-color: variables.$neutral-900;
+  color: variables.$neutral-50;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     width: auto;
     margin: auto;
   }
 }
 
 .contact-section-mission .form-holder {
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     padding: 40px;
   }
 }
 
 .contact-section-mission .form-holder button {
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     margin: auto;
   }
 }
@@ -123,7 +123,7 @@ contact page layout
 }
 
 .form-holder {
-  background-color: $secondary-900;
+  background-color: variables.$secondary-900;
   min-width: 50vh;
   color: var(--Neutral-Neutral-50, #f7f7f8);
   font-family: Inter;
@@ -135,7 +135,7 @@ contact page layout
   height: auto;
   padding: 80px 88px 80px 88px;
 
-  @media (max-width: $screen-lg) {
+  @media (max-width: variables.$screen-lg) {
     min-width: 100%;
     margin: auto;
     padding: 0;

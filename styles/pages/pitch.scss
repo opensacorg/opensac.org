@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /*
 Pitch page layout.
@@ -25,16 +25,16 @@ Pitch page layout.
   right: 0;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-50;
+  border-bottom: 4px solid variables.$neutral-50;
 }
 
 .pitch-heading-paragraph {
-  @include subheading-regular;
+  @include mixins.subheading-regular;
   margin: 0;
-  color: $neutral-50;
+  color: variables.$neutral-50;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
 
@@ -49,7 +49,7 @@ Pitch page layout.
   flex-direction: row;
   gap: 32px;
 
-  @media (max-width: $screen-xl) {
+  @media (max-width: variables.$screen-xl) {
     gap: 16px;
   }
 }
@@ -68,75 +68,34 @@ Pitch page layout.
 }
 
 .pitch-step-header {
-  @include h3-bold;
+  @include mixins.h3-bold;
   margin: 0;
-  color: $neutral-50;
+  color: variables.$neutral-50;
 
-  @media (max-width: $screen-sm) {
-    @include h5-semi-bold;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.h5-semi-bold;
     font-weight: 700;
   }
 }
 
 .pitch-step-paragraph {
-  @include p3-regular;
+  @include mixins.p3-regular;
   margin: 0;
-  color: $neutral-50;
+  color: variables.$neutral-50;
 
-  @media (max-width: $screen-sm) {
-    @include p2-regular;
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
   }
 }
-
 
 .pitch-sidebar-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
 
-  @media (max-width: $screen-xs) {
+  @media (max-width: variables.$screen-xs) {
     gap: 0;
   }
-}
-
-.get-started {
-  position: relative;
-  background-image: url("/img/about/rectangle.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin: auto;
-
-  @media (max-width: $screen-sm) {
-    width: 90vw;
-  }
-}
-
-.get-started img {
-  opacity: 0;
-}
-
-.get-started-anchor {
-  @include h3-bold;
-  color: black;
-  width: 80%;
-  position: absolute;
-  top: 40%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-
-  @media (max-width: $screen-sm) {
-    font-size: 1.7em;
-    line-height: 1.2em;
-  }
-
-  @media (max-width: $screen-xs) {
-    font-size: 1.5em;
-  }
-}
-
-.get-started-anchor a {
-  color: $primary-500;
 }
 
 .pitch-anchors-container {
@@ -146,9 +105,9 @@ Pitch page layout.
 }
 
 .pitch-anchor {
-  color: $secondary-500;
-  @include subheading-bold;
+  color: variables.$secondary-500;
+  @include mixins.subheading-bold;
   margin: 0;
   padding-top: 16px;
-  border-top: 1px $neutral-50 solid;
+  border-top: 1px variables.$neutral-50 solid;
 }

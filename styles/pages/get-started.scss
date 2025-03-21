@@ -1,17 +1,9 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /*
 Get Started page layout
  */
-
-// Instructions section
-
-.instructions-container {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
 
 .dark-heading-container {
   position: relative;
@@ -24,59 +16,5 @@ Get Started page layout
   right: 0;
   height: 1px;
   width: 43px;
-  border-bottom: 4px solid $neutral-50;
-}
-
-.get-started {
-  position: relative;
-  background-image: url("/img/about/rectangle.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin: auto;
-
-  @media (max-width: $screen-sm) {
-    width: 90vw;
-  }
-}
-
-.get-started img {
-  opacity: 0;
-}
-
-.get-started-anchor {
-  @include h3-bold;
-  color: black;
-  width: 80%;
-  position: absolute;
-  top: 40%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-
-  @media (max-width: $screen-sm) {
-    font-size: 1.7em;
-    line-height: 1.2em;
-  }
-
-  @media (max-width: $screen-xs) {
-    font-size: 1.5em;
-  }
-}
-
-.get-started-anchor a {
-  color: $primary-500;
-}
-
-.anchors-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.anchor {
-  color: $secondary-500;
-  @include subheading-bold;
-  margin: 0;
-  padding-top: 16px;
-  border-top: 1px $neutral-50 solid;
+  border-bottom: 4px solid variables.$neutral-50;
 }
