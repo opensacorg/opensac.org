@@ -1,15 +1,10 @@
 import Donate from './donate'
-import AppNavbar from '@/components/layout/AppNavbar'
-import MarginTop from '@/components/layout/MarginTop'
-import AppFooter from '@/components/layout/AppFooter'
+import AppLayout from '@/components/layout/AppLayout'
 
 export default function DonatePage() {
   return (
-    <>
-      <AppNavbar fade={false} />
-      <MarginTop />
+    <AppLayout>
       <Donate></Donate>
-      <AppFooter />
-    </>
+    </AppLayout>
   )
 }

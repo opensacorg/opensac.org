@@ -1,8 +1,6 @@
 import HeaderUnderline from '../../components/layout/HeaderUnderline'
 import SidebarSection from '../../components/layout/SidebarSection'
-import AppNavbar from '@/components/layout/AppNavbar'
-import MarginTop from '@/components/layout/MarginTop'
-import AppFooter from '@/components/layout/AppFooter'
+import AppLayout from '@/components/layout/AppLayout'
 
 /**
  * Section type. Displays light or dark themes.
@@ -19,9 +17,7 @@ export const SectionType = {
  */
 export default function CommunitySupportStatementPage() {
   return (
-    <div className="">
-      <AppNavbar fade={false} />
-      <MarginTop />
+    <AppLayout>
       <SidebarSection sectionType={SectionType.light}>
         <div className={`sidebar-info-container`}>
           <HeaderUnderline
@@ -101,7 +97,6 @@ export default function CommunitySupportStatementPage() {
           </p>
         </div>
       </SidebarSection>
-      <AppFooter />
-    </div>
+    </AppLayout>
   )
 }

@@ -4,7 +4,6 @@ import Link from 'next/link'
 import ExtendedNavbarMenu from './ExtendedNavbarMenu'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import Banner from './Banner'
 import useBanner from '@/hooks/useBanner'
 
 /**
@@ -63,17 +62,6 @@ export default function AppNavbar({ fade = false }) {
 
   return (
     <div className="navbar-container">
-      <Banner id="community-support-statement-2025-banner">
-        <span className="font-semibold mr-2">Announcement:</span>
-        Read our new{' '}
-        <Link
-          href="/community-support-statement-2025"
-          onClick={() => dismissBanner()}
-        >
-          Community Support Statement
-        </Link>
-        .
-      </Banner>
       <nav
         className="navbar-toolbar"
         style={

@@ -1,15 +1,10 @@
 import Conduct from './conduct'
-import AppNavbar from '@/components/layout/AppNavbar'
-import MarginTop from '@/components/layout/MarginTop'
-import AppFooter from '@/components/layout/AppFooter'
+import AppLayout from '@/components/layout/AppLayout'
 
 export default function ConductPage() {
   return (
-    <>
-      <AppNavbar fade={false} />
-      <MarginTop />
+    <AppLayout>
       <Conduct></Conduct>
-      <AppFooter />
-    </>
+    </AppLayout>
   )
 }

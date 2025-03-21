@@ -5,6 +5,25 @@ import useBanner from '@/hooks/useBanner'
 
 /**
  * Banner component to display at the top of the page
+ * 
+ * @example
+ * ```
+  const { dismissBanner } = useBanner({
+    id: 'community-support-statement-2025-banner',
+  }) 
+
+  <Banner id="community-support-statement-2025-banner">
+    <span className="font-semibold mr-2">Announcement:</span>
+    Read our new{' '}
+    <Link
+      href="/community-support-statement-2025"
+      onClick={() => dismissBanner()}
+    >
+      Community Support Statement
+    </Link>
+    .
+  </Banner>
+ *  ```
  * @param {Object} props
  * @param {JSX.Element} props.children - The message to display in the banner
  * @returns {JSX.Element|null}

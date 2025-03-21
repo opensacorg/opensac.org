@@ -1,16 +1,11 @@
 import { githubOwner } from '@/constants'
 import Projects from './projects'
-import AppNavbar from '@/components/layout/AppNavbar'
-import MarginTop from '@/components/layout/MarginTop'
-import AppFooter from '@/components/layout/AppFooter'
+import AppLayout from '@/components/layout/AppLayout'
 
 export default function Page() {
   return (
-    <>
-      <AppNavbar fade={false} />
-      <MarginTop />
+    <AppLayout>
       <Projects githubOwner={githubOwner}></Projects>
-      <AppFooter />
-    </>
+    </AppLayout>
   )
 }

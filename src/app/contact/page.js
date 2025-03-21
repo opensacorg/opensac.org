@@ -1,15 +1,10 @@
 import Contact from './contact'
-import AppNavbar from '@/components/layout/AppNavbar'
-import MarginTop from '@/components/layout/MarginTop'
-import AppFooter from '@/components/layout/AppFooter'
+import AppLayout from '@/components/layout/AppLayout'
 
 export default function ContactPage() {
   return (
-    <>
-      <AppNavbar fade={false} />
-      <MarginTop />
+    <AppLayout>
       <Contact></Contact>
-      <AppFooter />
-    </>
+    </AppLayout>
   )
 }
