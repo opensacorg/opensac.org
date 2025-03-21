@@ -20,7 +20,7 @@ $neutral-900: #060718;
 $primary-900: #00081f;
 $secondary-900: #0c0900;
 $landing-background-color: #030303;
-$navbar-color: #000000;
+$navbar-color: #060717;
 $vivid-blue: #3155f5;
 
 /* 
@@ -37,3 +37,5 @@ $screen-xxl: 1400px;
 Layout variables.
 */
 $toolbar-height: 84px;
+$banner-height: 42px;
+$toolbar-height-with-banner: $toolbar-height + $banner-height;

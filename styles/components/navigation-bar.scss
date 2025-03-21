@@ -10,30 +10,42 @@ It is made up of three sections.
 - Right: Dropdown link that displays extended section
  */
 
-// Background behind the navbar. It requires the navbar to be transparent and offset page content. By default, this is not shown; it is overridden by the navbar-toolbar background color.
-.navbar-background {
-  background: variables.$landing-background-color;
-
-  // Add margin to first element after navbar. This offsets the page content.
-  + * {
-    margin-top: variables.$toolbar-height;
-  }
+.toolbar-after-content {
+  margin-top: variables.$toolbar-height;
 }
 
-.navbar-toolbar {
-  @include mixins.h5-semi-bold;
-  width: 100%;
+.toolbar-after-content-with-banner {
+  margin-top: variables.$toolbar-height-with-banner;
+}
+
+.toolbar-normal {
   height: variables.$toolbar-height;
+}
+
+.toolbar-height-with-banner {
+  height: variables.$toolbar-height-with-banner;
+}
+
+// Background behind the navbar. It requires the navbar to be transparent and offset page content. By default, this is not shown; it is overridden by the navbar-toolbar background color.
+.navbar-container {
+  background: transparent;
   position: fixed;
   top: 0;
   margin: 0;
   padding: 0;
   z-index: 4;
+  width: 100%;
+}
+
+.navbar-toolbar {
+  @include mixins.h5-semi-bold;
+  background: variables.$landing-background-color;
+  height: variables.$toolbar-height;
   display: flex;
   flex-wrap: wrap;
   color: variables.$secondary-50;
-  background: variables.$navbar-color;
-  box-shadow: 0 4px 4px 0 rgba(variables.$navbar-color, 0.25);
+  position: relative;
+  z-index: 5;
 
   a,
   .navbar-toolbar a:visited,

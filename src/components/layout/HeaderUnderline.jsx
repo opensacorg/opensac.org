@@ -26,7 +26,13 @@ export default function HeaderUnderline({
           {description}
         </h2>
       </div>
-      {children && <p className={`heading-paragraph-large`}>{children}</p>}
+      {children && (
+        <p
+          className={`heading-paragraph-large ${sectionType === SectionType.dark && 'heading-paragraph-color-dark'}`}
+        >
+          {children}
+        </p>
+      )}
     </>
   )
 }
