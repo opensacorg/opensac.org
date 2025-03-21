@@ -1,6 +1,6 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
-@use "../base/animations.scss";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../base/animations.scss';
 
 /*
 Navigation bar.
@@ -10,7 +10,7 @@ It is made up of three sections.
 - Right: Dropdown link that displays extended section
  */
 
-// Background behind the navbar. It requires the navbar to be transparent and offset page content. By default, this is not shown; it is overridden by the navbar-toolbar background color. 
+// Background behind the navbar. It requires the navbar to be transparent and offset page content. By default, this is not shown; it is overridden by the navbar-toolbar background color.
 .navbar-background {
   background: variables.$landing-background-color;
 
@@ -123,7 +123,7 @@ It is made up of three sections.
   margin: 0;
   background: variables.$secondary-50;
   border: none;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   float: left;
 }
 
@@ -138,7 +138,7 @@ It is made up of three sections.
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: url("/img/navbar/menu_hamburger_light.svg") no-repeat center right;
+  background: url('/img/navbar/menu_hamburger_light.svg') no-repeat center right;
 
   @media screen and (min-width: variables.$screen-lg) {
     background: transparent;
@@ -153,7 +153,6 @@ It is made up of three sections.
   background: transparent;
   color: transparent;
 }
-
 
 .navbar-nested-parent-link {
   background: transparent;
@@ -172,27 +171,13 @@ It is made up of three sections.
   box-shadow: 0 4px 4px 0 rgba(variables.$navbar-color, 0.25);
 }
 
-.navbar-extended-parent-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-
-  a,
-  a:visited,
-  a:link,
-  a:active {
-    color: variables.$secondary-500;
-  }
-}
-
 .navbar-extend-button-text {
   visibility: hidden;
 }
 
 .navbar-extend-background-active {
   .navbar-right-section {
-    background: url("/img/navbar/menu_x.png") no-repeat center right;
+    background: url('/img/navbar/menu_x.png') no-repeat center right;
   }
 
   @media screen and (min-width: variables.$screen-lg) {
@@ -219,13 +204,15 @@ It is made up of three sections.
   }
 
   .navbar-toggle-extend-button {
-    background: transparent url("/img/navbar/chevron_down.png") no-repeat center right;
+    background: transparent url('/img/navbar/chevron_down.png') no-repeat center
+      right;
     padding: 0 20px 0 0;
     color: variables.$secondary-500;
   }
 
   .navbar-toggle-extend-button-extended {
-    background: transparent url("/img/navbar/chevron_up.png") no-repeat center right;
+    background: transparent url('/img/navbar/chevron_up.png') no-repeat center
+      right;
     padding: 0 20px 0 0;
     color: variables.$neutral-900;
   }

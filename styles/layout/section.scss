@@ -1,4 +1,5 @@
-@use "../abstracts/variables";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .section-dark {
   background-color: variables.$primary-900;
@@ -19,4 +20,55 @@
 .general-section-dark {
   background-color: variables.$neutral-900;
   color: variables.$neutral-50;
+}
+
+.section-paragraph {
+  @include mixins.subheading-regular;
+  margin: 0;
+
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p3-regular;
+  }
+}
+
+.section-paragraph-small {
+  @include mixins.p3-regular;
+  margin: 0;
+
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
+  }
+}
+
+// Refactor this to use general section container class without light prefix. Dark is used but not defined.
+.general-section-container {
+  width: 50%;
+  position: relative;
+
+  @media (max-width: variables.$screen-md) {
+    width: 100%;
+  }
+}
+
+.section-container2 {
+  padding: 64px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  @media (max-width: variables.$screen-lg) {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 8vw 4vw;
+  }
+}
+
+.split-section-content-container {
+  @media (max-width: variables.$screen-md) {
+    width: 100%;
+  }
 }

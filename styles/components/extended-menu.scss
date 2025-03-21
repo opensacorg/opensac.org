@@ -1,5 +1,5 @@
-@use "../abstracts/variables.scss";
-@use "../abstracts/mixins";
+@use '../abstracts/variables.scss';
+@use '../abstracts/mixins';
 
 /*
 Navigation bar extended drop down menu.
@@ -56,10 +56,6 @@ Navigation bar extended drop down menu.
   padding-top: 20px;
 }
 
-.navbar-extended-mobile-section {
-  padding: 16px;
-}
-
 .navbar-extended-content ul {
   list-style-type: none;
   margin: 0;
@@ -67,7 +63,7 @@ Navigation bar extended drop down menu.
 }
 
 .navbar-extended-mobile-content ul::before {
-  content: ''
+  content: '';
 }
 
 .navbar-extended-mobile-section li.active a {
@@ -84,10 +80,6 @@ Navigation bar extended drop down menu.
   }
 }
 
-.navbar-mobile-content-02 {
-  display: none !important;
-}
-
 .navbar-extended-mobile-content {
   padding: 10px;
   display: flex;
@@ -96,14 +88,16 @@ Navigation bar extended drop down menu.
 }
 
 .navbar-extended-mobile-content-button-01 {
-  background: transparent url("/img/navbar/menu_chevron_right.png") no-repeat center right;
+  background: transparent url('/img/navbar/menu_chevron_right.png') no-repeat
+    center right;
   padding: 0 18px 0 0;
   color: variables.$secondary-500;
   cursor: pointer;
 }
 
 .navbar-extended-mobile-content-button-02 {
-  background: transparent url("/img/navbar/menu_chevron_left.png") no-repeat center left;
+  background: transparent url('/img/navbar/menu_chevron_left.png') no-repeat
+    center left;
   padding: 0 0 0 17px;
   color: variables.$secondary-500;
   cursor: pointer;
@@ -151,5 +145,3 @@ Navigation bar extended drop down menu.
     display: block;
   }
 }
-
-

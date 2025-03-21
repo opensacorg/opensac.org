@@ -1,28 +1,12 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 /*
 FAQ page layout.
  */
-.faq-section-heading-underline::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid variables.$neutral-900;
-}
 
 .faq-heading-section-sub {
   max-width: 450px;
-}
-
-.faq-section-paragraph {
-  @include mixins.p3-regular;
-  margin: 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.p2-regular;
-  }
 }
 
 .faq-main {
@@ -99,12 +83,6 @@ FAQ page layout.
   }
 }
 
-.faq-question,
-details {
-  border-top: 1px solid variables.$neutral-400;
-  padding: 0 20px;
-}
-
 details > summary {
   list-style: none;
 }
@@ -123,9 +101,8 @@ details h4 {
 
 .faq-question a::after,
 details h4::after {
-  content: "";
+  content: '';
   flex-shrink: 0;
-  margin-left: auto;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 6.5V12.5M12 12.5V18.5M12 12.5H18M12 12.5H6' stroke='%23060718' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
   background-repeat: no-repeat;
   display: block;
@@ -133,12 +110,12 @@ details h4::after {
   background-position: center;
   height: 44px;
   width: 44px;
-  padding: 10px;
+  margin: 10px auto;
 }
 
 .faq-question.question-open a::after,
 details[open] h4::after {
-  content: "";
+  content: '';
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M18 12H6' stroke='%23060718' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
 }
 
@@ -159,4 +136,27 @@ details p {
 
 .question-open .question-text {
   display: block;
+}
+
+.faq-question,
+details {
+  border-top: 1px solid variables.$neutral-400;
+  padding: 0 20px;
+}
+
+.faq-section-paragraph {
+  @include mixins.p3-regular;
+  margin: 0;
+
+  @media (max-width: variables.$screen-sm) {
+    @include mixins.p2-regular;
+  }
+}
+
+.faq-section-heading-underline::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 43px;
+  border-bottom: 4px solid variables.$neutral-900;
 }

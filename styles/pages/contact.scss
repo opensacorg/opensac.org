@@ -1,40 +1,13 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 /*
 contact page layout
  */
-.contact-heading-underline::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid variables.$neutral-900;
-}
 
 .contact-sub-heading {
   @include mixins.h1-semi-bold;
   margin: 10px 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.h1-small-semi-bold;
-  }
-}
-
-.contact-underline-alt::after {
-  border-bottom: 4px solid variables.$neutral-50;
-}
-
-.contact-section-paragraph {
-  @include mixins.subheading-regular;
-  margin: 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.p3-regular;
-    max-width: 100%;
-  }
 }
 
 .contact-light-section {
@@ -43,14 +16,6 @@ contact page layout
 
   @media (max-width: variables.$screen-md) {
     padding: 16px;
-  }
-}
-
-.contact-heading-container {
-  position: relative;
-
-  @media (max-width: variables.$screen-md) {
-    width: 100%;
   }
 }
 
@@ -126,7 +91,7 @@ contact page layout
   background-color: variables.$secondary-900;
   min-width: 50vh;
   color: var(--Neutral-Neutral-50, #f7f7f8);
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;

@@ -1,6 +1,6 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
-@use "../base/animations";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../base/animations';
 
 /*
 Projects page layout.
@@ -36,14 +36,6 @@ Projects page layout.
   position: relative;
 }
 
-.projects-section-heading-underline::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid variables.$neutral-900;
-}
-
 .projects-heading-section-sub {
   margin: 10px 0;
   max-width: 450px;
@@ -51,15 +43,6 @@ Projects page layout.
 
   @media (max-width: variables.$screen-sm) {
     @include mixins.h3-semi-bold;
-  }
-}
-
-.projects-section-paragraph {
-  @include mixins.p3-regular;
-  margin: 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.p2-regular;
   }
 }
 
@@ -146,7 +129,7 @@ Projects page layout.
 }
 
 .project-search-section {
-  padding: 0px 24px 32px 24px;
+  padding: 0 24px 32px 24px;
 
   .project-search-form {
     display: grid;
@@ -158,28 +141,28 @@ Projects page layout.
     position: relative;
 
     /* clears the ‘X’ from Internet Explorer */
-    input[type=search]::-ms-clear {
+    input[type='search']::-ms-clear {
       display: none;
       width: 0;
       height: 0;
     }
 
-    input[type=search]::-ms-reveal {
+    input[type='search']::-ms-reveal {
       display: none;
       width: 0;
       height: 0;
     }
 
     /* clears the ‘X’ from Chrome */
-    input[type="search"]::-webkit-search-decoration,
-    input[type="search"]::-webkit-search-cancel-button,
-    input[type="search"]::-webkit-search-results-button,
-    input[type="search"]::-webkit-search-results-decoration {
+    input[type='search']::-webkit-search-decoration,
+    input[type='search']::-webkit-search-cancel-button,
+    input[type='search']::-webkit-search-results-button,
+    input[type='search']::-webkit-search-results-decoration {
       -webkit-appearance: none;
     }
 
     input {
-      padding: 14px 16px;
+      padding: 10px 16px;
     }
 
     input::placeholder {
@@ -235,7 +218,7 @@ Projects page layout.
   }
 
   @media (min-width: variables.$screen-lg) {
-    padding: 0px 80px 40px 80px;
+    padding: 0 80px 40px 80px;
 
     .project-search-form {
       grid-template-columns: 3fr 2fr;
@@ -262,14 +245,6 @@ Projects page layout.
   border-bottom: 1px solid variables.$neutral-900;
 }
 
-.projects-container-margins {
-  margin: 0 80px;
-
-  @media (max-width: variables.$screen-md) {
-    margin: 0 40px;
-  }
-}
-
 .projects-nav-light {
   color: variables.$neutral-900;
   border: 1px solid variables.$primary-500;
@@ -280,11 +255,6 @@ Projects page layout.
   @media (max-width: variables.$screen-md) {
     margin: 0 40px;
   }
-}
-
-.projects-nav {
-  justify-content: left;
-  padding: 20px;
 }
 
 .projects-nav a {
@@ -330,17 +300,11 @@ Projects page layout.
   }
 }
 
-.projects-question,
-details {
-  border-top: 1px solid variables.$neutral-400;
-  padding: 0 20px;
-}
-
-details>summary {
+details > summary {
   list-style: none;
 }
 
-details>summary::-webkit-details-marker {
+details > summary::-webkit-details-marker {
   display: none;
 }
 
@@ -354,7 +318,7 @@ details h4 {
 
 .projects-question a::after,
 details h4::after {
-  content: "";
+  content: '';
   flex-shrink: 0;
   margin-left: auto;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 6.5V12.5M12 12.5V18.5M12 12.5H18M12 12.5H6' stroke='%23060718' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
@@ -369,27 +333,8 @@ details h4::after {
 
 .projects-question.question-open a::after,
 details[open] h4::after {
-  content: "";
+  content: '';
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M18 12H6' stroke='%23060718' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
-}
-
-.question-text,
-details p {
-  @include mixins.p3-regular;
-  max-width: 1060px;
-  color: variables.$neutral-900;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 20px;
-
-  @media (max-width: variables.$screen-md) {
-    color: variables.$neutral-800;
-    @include mixins.p2-regular;
-  }
-}
-
-.question-open .question-text {
-  display: block;
 }
 
 /* ProjectCard Selectors */
@@ -417,7 +362,7 @@ details p {
   display: flex;
   flex-direction: column;
   color: variables.$neutral-900;
-  padding: 0px;
+  padding: 0;
   min-width: 300px;
 }
 
@@ -525,8 +470,8 @@ details p {
   text-align: center;
 
   @media (min-width: variables.$screen-lg) {
-      padding: 0 80px;
-    }
+    padding: 0 80px;
+  }
 }
 
 .project-cards-load-status-text {
@@ -592,20 +537,12 @@ details p {
 .project-heading {
   @include mixins.h1-small-semi-bold;
   color: variables.$secondary-50;
+  margin-bottom: 8px;
 }
 
 .project-main-heading-container {
   position: relative;
   padding-bottom: 12px;
-}
-
-.projects-main-heading-underline::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid white;
 }
 
 .project-button-container {
@@ -642,7 +579,7 @@ details p {
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 
   @media (min-width: variables.$screen-lg) {
     padding-bottom: 32%;
@@ -774,7 +711,7 @@ details p {
   width: 100%;
   padding-bottom: 56%;
   border-radius: 8px;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
 /* SingleProjectsRoadmap */
@@ -793,7 +730,7 @@ details p {
 
 .project-info-container-alt {
   margin-top: 44px;
-  
+
   @media (min-width: variables.$screen-lg) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -900,7 +837,7 @@ details p {
 
 .project-resources-container {
   padding: 20px 0 48px 0;
-  
+
   @media (min-width: variables.$screen-xl) {
     padding: 48px 0;
     scroll-margin-top: 42px;

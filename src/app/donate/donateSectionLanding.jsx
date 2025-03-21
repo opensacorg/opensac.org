@@ -5,25 +5,21 @@
 export default function DonateSectionLanding({ sectionType }) {
   return (
     <section className={`general-section-${sectionType}`}>
-      <div
-        className={`general-section-${sectionType}-container contact-heading-underline`}
-      >
+      <div className={`general-section-container heading-underline`}>
         <h1 className={`general-heading-section`}>Donate</h1>
         <h2 className={`contact-sub-heading`}>
           Support<br></br> Our Mission
         </h2>
       </div>
 
-      
-
-      <div className={`general-section-${sectionType}-container`}>
-        <p className={`contact-section-paragraph`}>
+      <div className={`general-section-container`}>
+        <p className={`section-paragraph`}>
           <span className={`paragraph-bold`}>
             Choose the option that suits you best.
-          </span>{" "}
+          </span>{' '}
           Make a one-time donation to support our mission instantly
           {/*, or become a sustaining supporter by selecting the monthly donation option*/}
-          . Your tax-deductable donation fuels innovaction, empowers civic
+          . Your tax-deductible donation fuels innovation, empowers civic
           engagement, and enhances public services while shaping a brighter
           future for Sacramento. Thank you for your generous support!
         </p>
@@ -37,5 +33,5 @@ export default function DonateSectionLanding({ sectionType }) {
         ></stripe-buy-button>
       </div>
     </section>
-  );
+  )
 }

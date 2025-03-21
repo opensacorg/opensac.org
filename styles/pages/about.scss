@@ -1,31 +1,9 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 /*
 About page layout.
  */
-.about-heading-underline::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  width: 43px;
-  border-bottom: 4px solid variables.$neutral-900;
-}
-
-.about-underline-alt::after {
-  border-bottom: 4px solid variables.$neutral-50;
-}
-
-.about-section-paragraph {
-  @include mixins.subheading-regular;
-  margin: 0;
-
-  @media (max-width: variables.$screen-sm) {
-    @include mixins.p3-regular;
-  }
-}
 
 .about-light-section {
   padding: 7%;
@@ -91,7 +69,7 @@ About page layout.
   justify-content: space-between;
   align-items: center;
   padding: 192px 0 192px 80px;
-  background-image: url("/img/open_data_day_curved.png");
+  background-image: url('/img/open_data_day_curved.png');
   background-repeat: no-repeat;
   background-size: 45vw 40vw;
   background-position: right center;
@@ -197,7 +175,7 @@ About page layout.
 }
 
 .member-name {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.1em;
   line-height: 29px;
@@ -206,7 +184,7 @@ About page layout.
 }
 
 .member-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
@@ -305,7 +283,7 @@ About page layout.
 
 .opportunities-get-started {
   position: relative;
-  background-image: url("/img/about/rectangle.png");
+  background-image: url('/img/about/rectangle.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -355,62 +333,13 @@ About page layout.
   }
 }
 
-.positions-header {
-  @include mixins.h5-semi-bold;
-  color: variables.$secondary-50;
-}
-
 .positions-list {
   border-top: 1px variables.$neutral-400 solid;
+  list-style: disc;
 }
 
 .position {
   @include mixins.subheading-bold;
   font-weight: 600;
   color: variables.$neutral-200;
-}
-
-.get-started-bottom {
-  position: relative;
-  background-image: url("/img/about/rectangle.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin: auto;
-
-  @media (min-width: variables.$screen-lg) {
-    display: none;
-  }
-
-  @media (max-width: variables.$screen-sm) {
-    width: 100%;
-  }
-}
-
-.get-started-bottom img {
-  opacity: 0;
-  width: 100%;
-}
-
-.opportunities-anchor-bottom {
-  @include mixins.h3-bold;
-  color: black;
-  width: 80%;
-  position: absolute;
-  top: 40%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-
-  @media (max-width: variables.$screen-sm) {
-    font-size: 1.7em;
-    line-height: 1.2em;
-  }
-
-  @media (max-width: variables.$screen-xs) {
-    font-size: 1.2em;
-  }
-}
-
-.opportunities-anchor-bottom a {
-  color: variables.$primary-500;
 }

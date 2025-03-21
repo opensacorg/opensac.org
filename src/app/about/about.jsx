@@ -9,7 +9,7 @@ import AboutSectionOpportunities from './aboutSectionOpportunities'
  * @type {{light: string, dark: string}}
  */
 export const SectionType = {
-  light: 'light', 
+  light: 'light',
   dark: 'dark',
 }
 
@@ -18,11 +18,13 @@ export const SectionType = {
  * @returns {JSX.Element}
  */
 export default function About() {
-  return (<div className="">
-    <AboutSectionLanding sectionType={SectionType.light}/>
-    <AboutSectionCollage sectionType={SectionType.light}/>
-    <AboutSectionMission sectionType={SectionType.dark}/>
-    <AboutSectionTeam sectionType={SectionType.light}/>
-    <AboutSectionOpportunities sectionType={SectionType.dark}/>
-  </div>)
+  return (
+    <div className="">
+      <AboutSectionLanding sectionType={SectionType.light} />
+      <AboutSectionCollage sectionType={SectionType.light} />
+      <AboutSectionMission sectionType={SectionType.dark} />
+      <AboutSectionTeam sectionType={SectionType.light} />
+      <AboutSectionOpportunities sectionType={SectionType.dark} />
+    </div>
+  )
 }

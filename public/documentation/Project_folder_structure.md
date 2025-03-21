@@ -3,6 +3,7 @@
 ## [Top-level files](https://nextjs.org/docs/getting-started/project-structure#top-level-files)
 
 #### Next.js
+
 - [`next.config.js`](https://nextjs.org/docs/app/api-reference/next-config-js) - Configuration file for Next.js
 - [`package.json`](https://nextjs.org/docs/getting-started/installation#manual-installation) - Project dependencies and scripts
 - [`instrumentation.ts`](https://nextjs.org/docs/app/building-your-application/optimizing/instrumentation) - OpenTelemetry and Instrumentation file
@@ -97,6 +98,7 @@
 ### [Routes](https://nextjs.org/docs/getting-started/project-structure#routes)
 
 #### Folder convention
+
 - [`index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) **(`.js` `.jsx` `.tsx`)** - Home page
 - [`folder/index`](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#index-routes) **(`.js` `.jsx` `.tsx`)** - Nested page
 

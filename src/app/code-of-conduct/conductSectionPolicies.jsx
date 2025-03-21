@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function conductSectionPolicies() {
   return (
@@ -15,10 +15,10 @@ export default function conductSectionPolicies() {
           </h2>
         </div>
         <p className={`conduct-item-paragraph`}>
-          This anti-harassment policy is based on{" "}
+          This anti-harassment policy is based on{' '}
           <Link className={`conduct-paragraph-anchor`} href="/">
             the example policy
-          </Link>{" "}
+          </Link>{' '}
           from the Geek Feminism wiki, created by the Ada Initiative and other
           volunteers.
           <br />
@@ -41,7 +41,7 @@ export default function conductSectionPolicies() {
           In addition to governing our own events by this policy, Open
           Sacramento will only lend its brand and fund groups that offer an
           anti-harassment policy to their attendees. For information on how to
-          offer an anti-harassment policy to your group,{" "}
+          offer an anti-harassment policy to your group,{' '}
           <Link className={`conduct-paragraph-anchor`} href="/">
             see this guide.
           </Link>
@@ -79,7 +79,7 @@ export default function conductSectionPolicies() {
 
         <p className={`conduct-item-paragraph`}>
           If you are being harassed, notice that someone else is being harassed,
-          or have any other concerns, please fill out{" "}
+          or have any other concerns, please fill out{' '}
           <Link href="https://forms.gle/JF3Q1AQA6pGxNSNS8">this form</Link>.
         </p>
 
@@ -95,5 +95,5 @@ export default function conductSectionPolicies() {
         </h3>
       </div>
     </section>
-  );
+  )
 }

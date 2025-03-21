@@ -1,53 +1,53 @@
-@use "../abstracts/variables.scss";
-@use "../abstracts/mixins";
-@use "../base/animations";
+@use '../abstracts/variables.scss';
+@use '../abstracts/mixins';
+@use '../base/animations';
 
 .btn {
-    cursor: pointer;
-    border-radius: 6px;
-    padding: 16px 24px;
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    white-space: nowrap;
-    
-    @include mixins.button-regular;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 16px 24px;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  white-space: nowrap;
+
+  @include mixins.button-regular;
 }
 
 .btn-gold {
-    background: variables.$secondary-500;
-    color: variables.$neutral-900;
-    @include animations.light-button-transition;
+  background: variables.$secondary-500;
+  color: variables.$neutral-900;
+  @include animations.light-button-transition;
 }
 
 .btn-blue {
-    color: variables.$secondary-50;
-    background-color: variables.$primary-500;
-    border: solid variables.$primary-500 1px;
+  color: variables.$secondary-50;
+  background-color: variables.$primary-500;
+  border: solid variables.$primary-500 1px;
 
-    @include animations.button-transition(variables.$vivid-blue, white);
+  @include animations.button-transition(variables.$vivid-blue, white);
 }
 
 .btn-alt-light {
-    color: variables.$secondary-50;
-    background-color: transparent;
-    border: solid variables.$secondary-500 1px;
-    
-    @include animations.dark-button-transition;
+  color: variables.$secondary-50;
+  background-color: transparent;
+  border: solid variables.$secondary-500 1px;
+
+  @include animations.dark-button-transition;
 }
 
 .btn-alt-gold {
-    color: variables.$secondary-500;
-    background-color: transparent;
-    border: solid variables.$secondary-500 1px;
-    
-    @include animations.dark-button-transition;
+  color: variables.$secondary-500;
+  background-color: transparent;
+  border: solid variables.$secondary-500 1px;
+
+  @include animations.dark-button-transition;
 }
 
 .btn-alt-blue {
-    color: variables.$primary-500;
-    background-color: transparent;
-    border: solid variables.$primary-500 1px;
+  color: variables.$primary-500;
+  background-color: transparent;
+  border: solid variables.$primary-500 1px;
 
-    @include animations.dark-button-transition;
+  @include animations.dark-button-transition;
 }

@@ -1,4 +1,4 @@
-import Button from "@/components/Buttons";
+import Button from '../../components/ui/buttons'
 
 /**
  * Home projects section.
@@ -10,17 +10,25 @@ export default function HomeSectionLandingImage() {
       <section className={`home-landing-image`}>
         <div className={`home-landing-container`}>
           <h1 className={`home-landing-heading`}>
-            <span>We are</span> <br/>
+            <span>We are</span> <br />
             Open Sacramento
           </h1>
-          <p className={`home-section-paragraph`}>
+          <p className={`section-paragraph`}>
             Join us to address civic challenges and enhance public services for
-            Sacramento residents through technology and open data. Volunteer now for a
-            better future!
+            Sacramento residents through technology and open data. Volunteer now
+            for a better future!
           </p>
           <div className={`home-buttons-group`}>
-            <Button className={`btn btn-alt-light`} href="/get-started" textContent="Get Started" />
-            <Button className={`btn btn-gold`} href="/projects" textContent="View Projects" />
+            <Button
+              className={`btn btn-alt-light`}
+              href="/get-started"
+              textContent="Get Started"
+            />
+            <Button
+              className={`btn btn-gold`}
+              href="/projects"
+              textContent="View Projects"
+            />
           </div>
         </div>
       </section>

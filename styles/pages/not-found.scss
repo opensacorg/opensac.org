@@ -1,10 +1,10 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .not-found-container {
   min-height: 100dvh;
   display: grid;
-  background-color: $secondary-50;
+  background-color: variables.$secondary-50;
   text-align: center;
 }
 
@@ -25,7 +25,7 @@
   gap: 1rem;
 }
 
-@media (min-width: $screen-md) {
+@media (min-width: variables.$screen-md) {
   .not-found-content {
     margin: 0 2rem;
     align-self: center;
@@ -33,33 +33,33 @@
 }
 
 .not-found-content h1 {
-  @include h1-bold;
-  color: $primary-900;
+  @include mixins.h1-bold;
+  color: variables.$primary-900;
   margin: 0;
 }
 
 .not-found-content h4 {
-  @include subheading-medium-bold;
-  color: $primary-900;
+  @include mixins.subheading-medium-bold;
+  color: variables.$primary-900;
   margin: 0;
 }
 
 .not-found-content p {
-  @include p3-regular;
-  color: $neutral-300;
+  @include mixins.p3-regular;
+  color: variables.$neutral-300;
   margin: 0;
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     display: inline;
   }
 }
 
 .not-found-content p:first-child {
-  @media (max-width: $screen-sm) {
+  @media (max-width: variables.$screen-sm) {
     display: inline;
     margin-right: 5px;
   }
 }
 
 .not-found-link {
-  color: $neutral-900;
+  color: variables.$neutral-900;
 }
