@@ -1,9 +1,10 @@
+import AppLayout from '@/components/layout/AppLayout'
 import Home from './home/home'
 
 export default function DefaultPage() {
   return (
-    <div className="">
-      <Home></Home>
-    </div>
+    <AppLayout fadeNavbar={true}>
+      <Home />
+    </AppLayout>
   )
 }

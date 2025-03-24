@@ -1,9 +1,10 @@
 import NameChange from './nameChange'
+import AppLayout from '@/components/layout/AppLayout'
 
 export default function NameChangePage() {
   return (
-    <>
-      <NameChange></NameChange>
-    </>
+    <AppLayout>
+      <NameChange />
+    </AppLayout>
   )
 }
