@@ -65,9 +65,7 @@ export default function AboutSectionOpportunities({ sectionType }) {
         <div className={`positions-container`}>
           <div className={`position-header`}>Product</div>
           <ul className={`positions-list`}>
-            <li className={`position`}>
-              <s>Director of Frontend Engineering</s>
-            </li>
+            <li className={`position`}>Director of Frontend Engineering</li>
             <li className={`position`}>Director of Design & Usability</li>
           </ul>
         </div>

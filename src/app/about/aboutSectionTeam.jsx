@@ -82,20 +82,6 @@ export default function AboutSectionTeam() {
             </div>
           </div>
 
-          <div className={`team-grid-item`}>
-            <img
-              src="/img/about/alexandre_steinhauslin.jpg"
-              alt="Team Member Name"
-            />
-            <div className={`member-info-container`}>
-              <div className={`member-name-container`}>
-                <h2 className={`member-name`}>Alexandre Steinhauslin</h2>
-                <h3 className={`member-title`}>
-                  Director, Frontend Engineering
-                </h3>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
