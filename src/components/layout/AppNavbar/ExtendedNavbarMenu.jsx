@@ -32,12 +32,15 @@ const ExtendedNavbarMenu = (visible) => {
             Donate
           </Link>
           <div>
-            <span
+            <button
+              type="button"
               className={'navbar-extended-mobile-content-button-01'}
+              aria-expanded={mobileNavPosition}
+              aria-label="Show more menu options"
               onClick={() => toggleMobileNavPosition(!mobileNavPosition)}
             >
               Get Involved
-            </span>
+            </button>
           </div>
         </div>
         <div
@@ -63,12 +66,14 @@ const ExtendedNavbarMenu = (visible) => {
             FAQs
           </Link>
           <div>
-            <span
+            <button
+              type="button"
               className={'navbar-extended-mobile-content-button-02'}
+              aria-label="Back to main menu"
               onClick={() => toggleMobileNavPosition(!mobileNavPosition)}
             >
               Back
-            </span>
+            </button>
           </div>
         </div>
       </div>

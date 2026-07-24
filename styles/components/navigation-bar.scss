@@ -150,10 +150,20 @@ It is made up of three sections.
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
   background: url('/img/navbar/menu_hamburger_light.svg') no-repeat center right;
 
   @media screen and (min-width: variables.$screen-lg) {
     background: transparent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$secondary-50;
+    outline-offset: 2px;
   }
 }
 

@@ -90,17 +90,33 @@ Navigation bar extended drop down menu.
 .navbar-extended-mobile-content-button-01 {
   background: transparent url('/img/navbar/menu_chevron_right.png') no-repeat
     center right;
+  border: none;
+  margin: 0;
+  font: inherit;
   padding: 0 18px 0 0;
   color: variables.$secondary-500;
   cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid variables.$secondary-500;
+    outline-offset: 2px;
+  }
 }
 
 .navbar-extended-mobile-content-button-02 {
   background: transparent url('/img/navbar/menu_chevron_left.png') no-repeat
     center left;
+  border: none;
+  margin: 0;
+  font: inherit;
   padding: 0 0 0 17px;
   color: variables.$secondary-500;
   cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid variables.$secondary-500;
+    outline-offset: 2px;
+  }
 }
 
 .mobile-nav-link {

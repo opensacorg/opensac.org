@@ -128,8 +128,17 @@ export default function AppNavbar({ fade = false }) {
                   : 'navbar-extend-background-inactive'
               }`}
             >
-              <div
+              <button
+                type="button"
                 className={`navbar-right-section`}
+                aria-expanded={extendedMenuVisible}
+                aria-haspopup="true"
+                aria-controls="navbar-extended-menu"
+                aria-label={
+                  extendedMenuVisible
+                    ? 'Close navigation menu'
+                    : 'Open navigation menu'
+                }
                 onClick={() => {
                   showExtendedMenu(!extendedMenuVisible)
                 }}
@@ -153,15 +162,17 @@ export default function AppNavbar({ fade = false }) {
                     </span>
                   </div>
                 </div>
-              </div>
+              </button>
             </div>
           </div>
         </div>
-        {extendedMenuVisible ? (
-          <div className={'navbar-toolbar-extended'}>
-            <ExtendedNavbarMenu visible={extendedMenuVisible} />
-          </div>
-        ) : null}
+        <div
+          id="navbar-extended-menu"
+          className={'navbar-toolbar-extended'}
+          style={extendedMenuVisible ? {} : { display: 'none' }}
+        >
+          <ExtendedNavbarMenu visible={extendedMenuVisible} />
+        </div>
       </nav>
     </div>
   )
