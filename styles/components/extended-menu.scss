@@ -100,6 +100,7 @@ Navigation bar extended drop down menu.
   &:focus-visible {
     outline: 2px solid variables.$secondary-500;
     outline-offset: 2px;
+    border-radius: 1px;
   }
 }
 

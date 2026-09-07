@@ -160,11 +160,6 @@ It is made up of three sections.
   @media screen and (min-width: variables.$screen-lg) {
     background: transparent;
   }
-
-  &:focus-visible {
-    outline: 2px solid variables.$secondary-50;
-    outline-offset: 2px;
-  }
 }
 
 .navbar-extended-button {
