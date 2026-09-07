@@ -1,0 +1,7 @@
+:HL["/_next/static/chunks/0jaz5brk34sep.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/0rup6anvs29g2.css","style"]
+:HL["/img/socialmedia/facebook.svg","image"]
+:HL["/img/socialmedia/twitter.svg","image"]
+:HL["/img/socialmedia/youtube.svg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"projects","param":null,"prefetchHints":4192,"slots":{"children":{"name":"project","param":{"type":"d","key":"sacramento-campaign-finance","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"ZlsmA3uZmwYpWiNBRGcfI"}
