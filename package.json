@@ -4,15 +4,15 @@
   "description": "Website for Open Sacramento",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint",
     "test": "vitest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/code4sac/opensac.org.git"
+    "url": "git+https://github.com/opensacorg/opensac.org.git"
   },
   "keywords": [],
   "author": {
@@ -22,41 +22,52 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/code4sac/opensac.org/issues"
+    "url": "https://github.com/opensacorg/opensac.org/issues"
   },
-  "homepage": "https://github.com/code4sac/opensac.org#readme",
+  "homepage": "https://opensac.org",
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.0",
-    "@tailwindcss/postcss": "^4.0.15",
-    "@tailwindcss/typography": "^0.5.16",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/user-event": "^14.6.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "concurrently": "^9.1.2",
-    "eslint": "^9.22.0",
-    "eslint-config-next": "15.2.3",
-    "jsdom": "^26.0.0",
-    "next": "^15.2.3",
-    "postcss": "^8.5.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sass": "^1.86.0",
-    "tailwindcss": "^4.0.13",
-    "vitest": "^3.0.9"
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/typography": "^0.5.20",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.3.4",
+    "jsdom": "^30.0.1",
+    "next": "^16.3.4",
+    "postcss": "^8.5.28",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sass": "^1.104.0",
+    "tailwindcss": "^4.3.3",
+    "vitest": "^5.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mdx-js/loader": "^3.1.0",
-    "@mdx-js/react": "^3.1.0",
-    "@mui/material": "^7.0.0-beta.3",
-    "@next/mdx": "^15.2.3",
-    "@types/mdx": "^2.0.13",
+    "@emotion/styled": "^11.14.1",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@mui/material": "^9.4.0",
+    "@next/mdx": "^16.3.4",
+    "@types/mdx": "^2.0.14",
     "keen-slider": "^6.8.6",
     "moment": "^2.30.1",
-    "next-mdx-remote": "^5.0.0",
+    "next-mdx-remote": "^6.0.0",
     "prop-types": "^15.8.1",
-    "swr": "^2.3.3",
-    "yaml": "^2.7.0"
+    "swr": "^2.5.1",
+    "yaml": "^2.9.0"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.5.1": true,
+    "unrs-resolver@1.12.2": true
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "12.0.2",
+      "onFail": "download"
+    }
   }
 }
