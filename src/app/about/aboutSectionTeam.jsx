@@ -48,31 +48,6 @@ export default function AboutSectionTeam() {
           </div>
 
           <div className={`team-grid-item`}>
-            <img src="/img/about/walter_yu.png" alt="Team Member Name" />
-            <div className={`member-info-container`}>
-              <div className={`member-name-container`}>
-                <h2 className={`member-name`}>Walter Yu</h2>
-                <h3 className={`member-title`}>Senior Director, Platform</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className={`team-grid-item`}>
-            <img
-              src="/img/about/brianda_hernandez.png"
-              alt="Team Member Name"
-            />
-            <div className={`member-info-container`}>
-              <div className={`member-name-container`}>
-                <h2 className={`member-name`}>Brianda Hernandez</h2>
-                <h3 className={`member-title`}>
-                  Senior Director, Communications
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div className={`team-grid-item`}>
             <img src="/img/about/nate_bass.jpg" alt="Team Member Name" />
             <div className={`member-info-container`}>
               <div className={`member-name-container`}>
